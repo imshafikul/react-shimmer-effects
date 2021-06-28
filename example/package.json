@@ -5,14 +5,15 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "moment": "^2.29.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm link shimmer-react && react-scripts start",
+    "build": "npm link shimmer-react && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
