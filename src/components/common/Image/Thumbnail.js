@@ -17,7 +17,7 @@ const Thumbnail = ({ height, width, center, cssClasses }) => {
       <div
         className={classNames({
           "shimmer shimmer-thumbnail": true,
-          [cssClasses]: true,
+          [cssClasses]: cssClasses,
         })}
         style={style}
       ></div>

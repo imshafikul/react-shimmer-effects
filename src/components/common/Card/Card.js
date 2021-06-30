@@ -9,7 +9,7 @@ const Card = ({ children, cssClasses }) => {
     <div
       className={classNames({
         "shimmer-card": true,
-        [cssClasses]: true,
+        [cssClasses]: cssClasses,
       })}
     >
       {children}

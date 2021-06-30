@@ -29,7 +29,7 @@ const SimpleGallery = ({ row, col, gap, cssClasses, fitOnFrame }) => {
         grid: true,
         [`grid-gap-${gap}`]: true,
         [`grid-column-${col}`]: true,
-        [cssClasses]: true,
+        [cssClasses]: cssClasses,
       })}
     >
       {renderThumbnails()}
