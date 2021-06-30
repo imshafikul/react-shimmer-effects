@@ -9,7 +9,7 @@ export default class App extends Component {
         <Button size="md" />
         <Button size="lg" />
         <CircularImage size={300} center={true} />
-        <Thumbnail height={300} width={500} center={false} />
+        <Thumbnail height={300} width={500} center={false} cssClasses="m-0" />
       </div>
     );
   }
