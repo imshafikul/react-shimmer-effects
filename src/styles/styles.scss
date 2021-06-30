@@ -46,13 +46,6 @@ h6 {
     border-color: #f6f6f6;
   }
 
-  &-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-
   &-badge {
     width: 80px;
     height: 24px;
@@ -252,4 +245,8 @@ h6 {
 
 .grid-column-one-third {
   grid-template-columns: auto auto auto;
+}
+
+.text-center {
+  text-align: center;
 }
