@@ -1,0 +1,18 @@
+.shimmer-button {
+  border-radius: 4px;
+  height: 38px;
+  width: 120px;
+  margin-bottom: 20px;
+
+  &--sm {
+    border-radius: 3px;
+    height: 31px;
+    width: 100px;
+  }
+
+  &--lg {
+    height: 48px;
+    width: 140px;
+    border-radius: 5px;
+  }
+}

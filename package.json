@@ -29,7 +29,8 @@
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "classnames": "^2.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
