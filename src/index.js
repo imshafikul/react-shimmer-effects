@@ -1,5 +1,5 @@
 import Button from "./components/common/Button";
-import { CircularImage } from "./components/common/Image";
+import { CircularImage, Thumbnail } from "./components/common/Image";
 import "./styles/styles.scss";
 
-export { Button, CircularImage };
+export { Button, CircularImage, Thumbnail };

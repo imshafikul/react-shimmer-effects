@@ -1,7 +1,16 @@
-.shimmer-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  display: inline-block;
+.shimmer {
+  &-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  &-thumbnail {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
 }

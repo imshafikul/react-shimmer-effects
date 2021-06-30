@@ -1,4 +1,5 @@
 import CircularImage from "./CircularImage";
+import Thumbnail from "./Thumbnail";
 import "./image.scss";
 
-export { CircularImage };
+export { CircularImage, Thumbnail };
