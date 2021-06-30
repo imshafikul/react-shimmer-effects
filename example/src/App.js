@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, CircularImage, Thumbnail } from "shimmer-react";
+import { Button, CircularImage, Thumbnail, Card } from "shimmer-react";
 
 export default class App extends Component {
   render() {
@@ -10,6 +10,12 @@ export default class App extends Component {
         <Button size="lg" />
         <CircularImage size={300} center={true} />
         <Thumbnail height={300} width={500} center={false} cssClasses="m-0" />
+        <hr />
+        <Card cssClasses="p-30">
+          <Thumbnail center={false} cssClasses="m-0" />
+        </Card>
+        <br />
+        <hr />
       </div>
     );
   }
