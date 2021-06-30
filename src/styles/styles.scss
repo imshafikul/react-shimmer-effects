@@ -120,12 +120,6 @@ h6 {
       max-width: 100%;
     }
   }
-
-  &-gallery {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 15px;
-  }
 }
 
 @-webkit-keyframes shimmer {
@@ -145,16 +139,6 @@ h6 {
   100% {
     background-position: 1000px 0;
   }
-}
-
-.shimmer-gallery-puzzle {
-  height: 540px;
-}
-
-.grid-tutut {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 30px;
 }
 
 .m-0 {
@@ -223,15 +207,15 @@ h6 {
   gap: 30px;
 }
 
-.gid-column-half {
+.grid-column-2 {
   grid-template-columns: auto auto;
 }
 
-.grid-column-one-third {
+.grid-column-3 {
   grid-template-columns: auto auto auto;
 }
 
-.grid-column-one-fourth {
+.grid-column-4 {
   grid-template-columns: auto auto auto auto;
 }
 

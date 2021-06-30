@@ -10,7 +10,8 @@ const Thumbnail = ({ height, width, center, cssClasses }) => {
   return (
     <div
       className={classNames({
-        "text-center": center,
+        "h-100": true,
+        "text-center ": center,
       })}
     >
       <div
