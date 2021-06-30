@@ -4,6 +4,7 @@ import classNames from "classnames";
 import "./card.scss";
 
 const Card = ({ children, cssClasses }) => {
+  if (!children) return null;
   return (
     <div
       className={classNames({
@@ -18,6 +19,8 @@ const Card = ({ children, cssClasses }) => {
 
 Card.propTypes = {
   cssClasses: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array])
+    .isRequired,
 };
 
 Card.defaultProps = {};
