@@ -6,6 +6,9 @@ import {
   Card,
   SimpleGallery,
   FeaturedGallery,
+  TableCol,
+  TableRow,
+  Table,
 } from "shimmer-react";
 
 export default class App extends Component {
@@ -31,6 +34,12 @@ export default class App extends Component {
         <Card cssClasses="p-20">
           <FeaturedGallery row={4} col={4} />
         </Card>
+
+        <Table row={10} />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }
