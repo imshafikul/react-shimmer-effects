@@ -48,23 +48,6 @@ h6 {
     margin-bottom: 10px;
   }
 
-  &-content {
-    width: 100%;
-    height: 8px;
-    border-radius: 10px;
-    margin-bottom: 16px;
-  }
-
-  &-table-head {
-    display: flex;
-    padding: 20px 0;
-    border-radius: 5px;
-
-    > .shimmer {
-      margin: 0 30px;
-    }
-  }
-
   &-row {
     display: flex;
     margin: 0 -15px;
@@ -171,6 +154,10 @@ h6 {
 
 .grid {
   display: grid;
+}
+
+.grid-gap-15 {
+  gap: 15px;
 }
 
 .grid-gap-20 {
