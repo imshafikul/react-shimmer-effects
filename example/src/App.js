@@ -9,6 +9,7 @@ import {
   TableCol,
   TableRow,
   Table,
+  Badge,
 } from "shimmer-react";
 
 export default class App extends Component {
@@ -38,6 +39,7 @@ export default class App extends Component {
         <Table row={10} />
         <br />
         <br />
+        <Badge width={200} />
         <br />
         <br />
       </div>
