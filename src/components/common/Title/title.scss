@@ -1,0 +1,23 @@
+.shimmer-title {
+  margin-bottom: 20px;
+
+  &--secondary {
+    .shimmer-title-line {
+      height: 16px;
+    }
+  }
+
+  &-line {
+    width: 100%;
+    height: 24px;
+    border-radius: 20px;
+
+    &:first-child {
+      width: 100% !important;
+    }
+
+    &:last-child {
+      width: 40%;
+    }
+  }
+}

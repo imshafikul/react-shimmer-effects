@@ -6,6 +6,7 @@ import Table from "./components/modules/Table";
 import Card from "./components/common/Card";
 import Badge from "./components/common/Badge";
 import Text from "./components/common/Text";
+import Title from "./components/common/Title";
 import "./styles/styles.scss";
 
 export {
@@ -20,4 +21,5 @@ export {
   TableRow,
   Badge,
   Text,
+  Title,
 };

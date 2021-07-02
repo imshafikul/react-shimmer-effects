@@ -11,6 +11,7 @@ import {
   Table,
   Badge,
   Text,
+  Title,
 } from "shimmer-react";
 
 export default class App extends Component {
@@ -44,6 +45,14 @@ export default class App extends Component {
         <br />
         <br />
         <Text />
+        <br />
+        <br />
+        <br />
+        <Title />
+        <br />
+        <br />
+        <br />
+        <Title line={3} variant="secondary" />
       </div>
     );
   }
