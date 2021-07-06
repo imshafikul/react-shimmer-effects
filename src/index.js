@@ -7,6 +7,9 @@ import Card from "./components/common/Card";
 import Badge from "./components/common/Badge";
 import Text from "./components/common/Text";
 import Title from "./components/common/Title";
+import Separator from "./components/common/Separator";
+import SocialPost from "./components/modules/SocialPost";
+import { CategoryItem } from "./components/modules/Category";
 import "./styles/styles.scss";
 
 export {
@@ -22,4 +25,7 @@ export {
   Badge,
   Text,
   Title,
+  SocialPost,
+  Separator,
+  CategoryItem,
 };

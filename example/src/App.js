@@ -12,6 +12,9 @@ import {
   Badge,
   Text,
   Title,
+  SocialPost,
+  Separator,
+  CategoryItem,
 } from "shimmer-react";
 
 export default class App extends Component {
@@ -23,36 +26,99 @@ export default class App extends Component {
         <Button size="lg" />
         <CircularImage size={300} center={true} />
         <Thumbnail height={300} width={500} center={false} cssClasses="m-0" />
-        <hr />
+        <Separator />
+
         <Card cssClasses="p-30">
           <Thumbnail center={false} cssClasses="m-0" />
         </Card>
-        <br />
-        <hr />
+        <Separator />
+
         <Card cssClasses="p-20">
           <SimpleGallery />
         </Card>
-        <br />
-        <hr />
+        <Separator />
+
         <Card cssClasses="p-20">
           <FeaturedGallery row={4} col={4} />
         </Card>
-
         <Table row={10} />
-        <br />
-        <br />
+        <Separator />
+
         <Badge width={200} />
-        <br />
-        <br />
+        <Separator />
+
         <Text />
-        <br />
-        <br />
-        <br />
+        <Separator />
+
         <Title />
-        <br />
-        <br />
-        <br />
+        <Separator />
+
         <Title line={3} variant="secondary" />
+        <Separator />
+
+        <div className="shimmer-row">
+          <div className="shimmer-col">
+            <SocialPost type="image" />
+            <SocialPost type="both" />
+          </div>
+          <div className="shimmer-col">
+            <SocialPost type="text" />
+          </div>
+        </div>
+        <Separator />
+        <div className="w-40">
+          <Card cssClasses="p-30">
+            <CategoryItem hasImage={false} />
+
+            <CategoryItem
+              hasImage={true}
+              imageType="thumbnail"
+              imageWidth={100}
+              imageHeight={100}
+            />
+
+            <CategoryItem
+              hasImage={true}
+              imageType="circular"
+              imageWidth={100}
+              imageHeight={100}
+            />
+
+            <CategoryItem
+              hasImage={true}
+              imageType="thumbnail"
+              imageWidth={100}
+              imageHeight={100}
+              text={false}
+            />
+
+            <CategoryItem
+              hasImage={true}
+              imageType="circular"
+              imageWidth={100}
+              imageHeight={100}
+              text={false}
+            />
+
+            <CategoryItem
+              hasImage={true}
+              imageType="thumbnail"
+              imageWidth={100}
+              imageHeight={100}
+              title={false}
+            />
+
+            <CategoryItem
+              hasImage={true}
+              imageType="circular"
+              imageWidth={100}
+              imageHeight={100}
+              title={false}
+              cta={true}
+              contentCenter={true}
+            />
+          </Card>
+        </div>
       </div>
     );
   }

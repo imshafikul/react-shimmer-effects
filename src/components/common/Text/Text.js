@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./text.scss";
 
-const Text = ({ line, gap }) => {
+const Text = ({ line, gap, cssClasses }) => {
   const renderLines = () => {
     const text_lines = [];
 
@@ -19,6 +19,7 @@ const Text = ({ line, gap }) => {
       className={classNames({
         "grid shimmer-text": true,
         [`grid-gap-${gap}`]: gap,
+        [cssClasses]: cssClasses,
       })}
     >
       {renderLines()}
@@ -28,7 +29,8 @@ const Text = ({ line, gap }) => {
 
 Text.propTypes = {
   line: PropTypes.number,
-  gap: PropTypes.oneOf([15, 20, 30]),
+  gap: PropTypes.oneOf([10, 15, 20, 30]),
+  cssClasses: PropTypes.string,
 };
 
 Text.defaultProps = {

@@ -84,6 +84,14 @@ h6 {
   margin: 0;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -115,6 +123,10 @@ h6 {
 .flex-horizontal-center {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.flex-vertical-center {
   align-items: center;
 }
 
