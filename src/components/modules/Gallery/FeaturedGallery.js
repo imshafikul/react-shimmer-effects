@@ -11,7 +11,7 @@ const FeaturedGallery = (props) => {
         <Thumbnail cssClasses="h-100" />
       </div>
       <div className="shimmer-col flex-1">
-        <SimpleGallery {...props} cssClasses="h-100" fitOnFrame={true} />
+        <SimpleGallery {...props} cssClasses="h-100" fitOnFrame />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const Table = ({ row }) => {
 
   return (
     <div>
-      <TableRow header={true} />
+      <TableRow header />
       {renderRows()}
     </div>
   );

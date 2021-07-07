@@ -24,7 +24,7 @@ export default class App extends Component {
         <Button size="sm" />
         <Button size="md" />
         <Button size="lg" />
-        <CircularImage size={300} center={true} />
+        <CircularImage size={300} center />
         <Thumbnail height={300} width={500} center={false} cssClasses="m-0" />
         <Separator />
 
@@ -71,21 +71,21 @@ export default class App extends Component {
             <CategoryItem hasImage={false} />
 
             <CategoryItem
-              hasImage={true}
+              hasImage
               imageType="thumbnail"
               imageWidth={100}
               imageHeight={100}
             />
 
             <CategoryItem
-              hasImage={true}
+              hasImage
               imageType="circular"
               imageWidth={100}
               imageHeight={100}
             />
 
             <CategoryItem
-              hasImage={true}
+              hasImage
               imageType="thumbnail"
               imageWidth={100}
               imageHeight={100}
@@ -93,7 +93,7 @@ export default class App extends Component {
             />
 
             <CategoryItem
-              hasImage={true}
+              hasImage
               imageType="circular"
               imageWidth={100}
               imageHeight={100}
@@ -101,7 +101,7 @@ export default class App extends Component {
             />
 
             <CategoryItem
-              hasImage={true}
+              hasImage
               imageType="thumbnail"
               imageWidth={100}
               imageHeight={100}
@@ -109,13 +109,13 @@ export default class App extends Component {
             />
 
             <CategoryItem
-              hasImage={true}
+              hasImage
               imageType="circular"
               imageWidth={100}
               imageHeight={100}
               title={false}
-              cta={true}
-              contentCenter={true}
+              cta
+              contentCenter
             />
           </Card>
         </div>
