@@ -63,8 +63,8 @@ CategoryItem.propTypes = {
 CategoryItem.defaultProps = {
   hasImage: false,
   imageType: "thumbnail",
-  title: true,
-  text: true,
+  title: false,
+  text: false,
   contentCenter: false,
 };
 

@@ -25,11 +25,11 @@ export default class App extends Component {
         <Button size="md" />
         <Button size="lg" />
         <CircularImage size={300} center />
-        <Thumbnail height={300} width={500} center={false} cssClasses="m-0" />
+        <Thumbnail height={300} width={500} cssClasses="m-0" />
         <Separator />
 
         <Card cssClasses="p-30">
-          <Thumbnail center={false} cssClasses="m-0" />
+          <Thumbnail cssClasses="m-0" />
         </Card>
         <Separator />
 
@@ -68,13 +68,14 @@ export default class App extends Component {
         <Separator />
         <div className="w-40">
           <Card cssClasses="p-30">
-            <CategoryItem hasImage={false} />
+            <CategoryItem />
 
             <CategoryItem
               hasImage
               imageType="thumbnail"
               imageWidth={100}
               imageHeight={100}
+              title
             />
 
             <CategoryItem
@@ -82,6 +83,7 @@ export default class App extends Component {
               imageType="circular"
               imageWidth={100}
               imageHeight={100}
+              title
             />
 
             <CategoryItem
@@ -89,7 +91,7 @@ export default class App extends Component {
               imageType="thumbnail"
               imageWidth={100}
               imageHeight={100}
-              text={false}
+              text
             />
 
             <CategoryItem
@@ -97,7 +99,7 @@ export default class App extends Component {
               imageType="circular"
               imageWidth={100}
               imageHeight={100}
-              text={false}
+              text
             />
 
             <CategoryItem
@@ -105,17 +107,35 @@ export default class App extends Component {
               imageType="thumbnail"
               imageWidth={100}
               imageHeight={100}
-              title={false}
-            />
-
-            <CategoryItem
-              hasImage
-              imageType="circular"
-              imageWidth={100}
-              imageHeight={100}
-              title={false}
+              text
               cta
+            />
+
+            <CategoryItem
+              hasImage
+              imageType="circular"
+              imageWidth={100}
+              imageHeight={100}
+              text
+              cta
+            />
+
+            <CategoryItem
+              hasImage
+              imageType="circular"
+              imageWidth={50}
+              imageHeight={50}
               contentCenter
+              title
+            />
+
+            <CategoryItem
+              hasImage
+              imageType="circular"
+              imageWidth={50}
+              imageHeight={50}
+              contentCenter
+              title
             />
           </Card>
         </div>
