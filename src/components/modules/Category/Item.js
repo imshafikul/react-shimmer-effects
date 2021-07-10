@@ -40,7 +40,7 @@ const CategoryItem = ({
 
           <div className="flex-1 p-15">
             {title && <Title variant="secondary" />}
-            {text && <Text line={3} gap={10} />}
+            {text && <Text line={3} gap={10} cssClasses="mb-20" />}
             {cta && <Button size="sm" />}
           </div>
         </div>
