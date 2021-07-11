@@ -9,7 +9,7 @@ import Text from "./components/common/Text";
 import Title from "./components/common/Title";
 import Separator from "./components/common/Separator";
 import SocialPost from "./components/modules/SocialPost";
-import { CategoryItem } from "./components/modules/Category";
+import { CategoryItem, CategoryList } from "./components/modules/Category";
 import "./styles/styles.scss";
 
 export {
@@ -28,4 +28,5 @@ export {
   SocialPost,
   Separator,
   CategoryItem,
+  CategoryList,
 };
