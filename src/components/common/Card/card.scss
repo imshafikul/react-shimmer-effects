@@ -7,4 +7,16 @@
   &:not(:first-child) {
     margin-top: 30px;
   }
+
+  &--content-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+      width: 100%;
+      margin: auto;
+    }
+  }
 }

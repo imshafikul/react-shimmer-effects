@@ -16,7 +16,9 @@ import {
   Separator,
   CategoryItem,
   CategoryList,
+  PostItem,
   PostDetails,
+  PostList,
 } from "shimmer-react";
 
 export default class App extends Component {
@@ -118,17 +120,36 @@ export default class App extends Component {
             </Card>
           </div>
           <div className="shimmer-col">
-            <CategoryList title items={6} style="STYLE_SEVEN" />
+            <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />
           </div>
         </div>
 
         <h1>Post Details</h1>
         <PostDetails card cta variant="SIMPLE" />
         <PostDetails card cta variant="EDITOR" />
-        <Separator />
-        <Separator />
-        <Separator />
-        <Separator />
+        <h1>Post Item</h1>
+
+        <div className="shimmer-row">
+          <div className="shimmer-col">
+            <PostItem card title text cta />
+          </div>
+          <div className="shimmer-col">
+            <PostItem card title cta />
+          </div>
+          <div className="shimmer-col">
+            <PostItem
+              card
+              title
+              cta
+              imageType="thumbnail"
+              imageWidth={80}
+              imageHeight={80}
+              contentCenter
+            />
+          </div>
+        </div>
+        <h1>Post List</h1>
+        <PostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />
         <Separator />
       </div>
     );

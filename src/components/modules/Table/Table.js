@@ -7,7 +7,7 @@ const Table = ({ row }) => {
     const rows = [];
 
     for (let index = 0; index < row; index++) {
-      rows.push(<TableRow />);
+      rows.push(<TableRow key={index} />);
     }
 
     return rows;

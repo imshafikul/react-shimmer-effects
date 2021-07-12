@@ -10,7 +10,7 @@ import Title from "./components/common/Title";
 import Separator from "./components/common/Separator";
 import SocialPost from "./components/modules/SocialPost";
 import { CategoryItem, CategoryList } from "./components/modules/Category";
-import { PostDetails } from "./components/modules/Post";
+import { PostItem, PostDetails, PostList } from "./components/modules/Post";
 import "./styles/styles.scss";
 
 export {
@@ -30,5 +30,7 @@ export {
   Separator,
   CategoryItem,
   CategoryList,
+  PostItem,
   PostDetails,
+  PostList,
 };

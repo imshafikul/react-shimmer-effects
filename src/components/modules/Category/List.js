@@ -4,7 +4,7 @@ import CategoryItem from "./Item";
 import Card from "../../common/Card";
 import Title from "../../common/Title";
 
-const CategoryList = ({ items, style, title }) => {
+const CategoryList = ({ items, categoryStyle, title }) => {
   const categories = {
     STYLE_ONE: <CategoryItem />,
     STYLE_TWO: (
@@ -67,7 +67,8 @@ const CategoryList = ({ items, style, title }) => {
 
   const renderItems = () => {
     const list = [];
-    for (let index = 0; index < items; index++) list.push(categories[style]);
+    for (let index = 0; index < items; index++)
+      list.push(<div key={index}>{categories[categoryStyle]}</div>);
     return list;
   };
 
@@ -82,7 +83,7 @@ const CategoryList = ({ items, style, title }) => {
 CategoryList.propTypes = {
   title: PropTypes.bool,
   items: PropTypes.number,
-  style: PropTypes.oneOf([
+  categoryStyle: PropTypes.oneOf([
     "STYLE_ONE",
     "STYLE_TWO",
     "STYLE_THREE",
@@ -96,7 +97,7 @@ CategoryList.propTypes = {
 CategoryList.defaultProps = {
   title: false,
   items: 5,
-  style: "STYLE_ONE",
+  categoryStyle: "STYLE_ONE",
 };
 
 export default CategoryList;

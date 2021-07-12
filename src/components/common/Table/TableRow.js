@@ -8,7 +8,7 @@ const TableRow = ({ col, header }) => {
     const columns = [];
 
     for (let index = 0; index < col; index++) {
-      columns.push(<TableCol />);
+      columns.push(<TableCol key={index} />);
     }
 
     return columns;

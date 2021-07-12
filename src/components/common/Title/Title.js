@@ -8,7 +8,9 @@ const Title = ({ line, gap, variant, cssClasses }) => {
     const title_lines = [];
 
     for (let index = 0; index < line; index++) {
-      title_lines.push(<div class="shimmer shimmer-title-line" />);
+      title_lines.push(
+        <div className="shimmer shimmer-title-line" key={index} />
+      );
     }
 
     return title_lines;
@@ -31,7 +33,7 @@ const Title = ({ line, gap, variant, cssClasses }) => {
 
 Title.propTypes = {
   line: PropTypes.number,
-  gap: PropTypes.oneOf([15, 20, 30]),
+  gap: PropTypes.oneOf([10, 15, 20, 30]),
   variant: PropTypes.oneOf(["primary", "secondary"]),
   cssClasses: PropTypes.string,
 };

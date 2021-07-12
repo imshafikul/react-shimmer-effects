@@ -8,7 +8,9 @@ const Text = ({ line, gap, cssClasses }) => {
     const text_lines = [];
 
     for (let index = 0; index < line; index++) {
-      text_lines.push(<div class="shimmer shimmer-text-line" />);
+      text_lines.push(
+        <div className="shimmer shimmer-text-line" key={index} />
+      );
     }
 
     return text_lines;

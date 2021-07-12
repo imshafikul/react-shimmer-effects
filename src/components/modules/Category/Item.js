@@ -51,7 +51,7 @@ const CategoryItem = ({
 
 CategoryItem.propTypes = {
   hasImage: PropTypes.bool.isRequired,
-  imageType: PropTypes.oneOf("circular", "thumbnail"),
+  imageType: PropTypes.oneOf(["circular", "thumbnail"]),
   imageWidth: PropTypes.number,
   imageHeight: PropTypes.number,
   title: PropTypes.bool,
