@@ -11,6 +11,7 @@ import Separator from "./components/common/Separator";
 import SocialPost from "./components/modules/SocialPost";
 import { CategoryItem, CategoryList } from "./components/modules/Category";
 import { PostItem, PostDetails, PostList } from "./components/modules/Post";
+import ContentBlock from "./components/modules/ContentBlock";
 import "./styles/styles.scss";
 
 export {
@@ -33,4 +34,5 @@ export {
   PostItem,
   PostDetails,
   PostList,
+  ContentBlock,
 };

@@ -19,6 +19,7 @@ import {
   PostItem,
   PostDetails,
   PostList,
+  ContentBlock,
 } from "shimmer-react";
 
 export default class App extends Component {
@@ -150,6 +151,23 @@ export default class App extends Component {
         </div>
         <h1>Post List</h1>
         <PostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />
+
+        <h1>Content Block</h1>
+        <ContentBlock
+          title
+          text
+          cta
+          thumbnailWidth={370}
+          thumbnailHeight={370}
+        />
+        <ContentBlock
+          title
+          text
+          cta
+          thumbnailWidth={370}
+          thumbnailHeight={370}
+        />
+
         <Separator />
       </div>
     );
