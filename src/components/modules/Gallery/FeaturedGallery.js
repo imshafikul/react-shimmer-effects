@@ -2,27 +2,45 @@ import React from "react";
 import PropTypes from "prop-types";
 import Thumbnail from "../../common/Image/Thumbnail";
 import SimpleGallery from "./SimpleGallery";
+import Card from "../../common/Card";
 import "./gallery.scss";
 
-const FeaturedGallery = (props) => {
-  return (
-    <div className="shimmer-row shimmer-gallery-puzzle">
+const FeaturedGallery = ({ row, col, gap, card, frameHeight }) => {
+  const style = {};
+  if (frameHeight) style.height = `${frameHeight}px`;
+
+  const renderContent = () => (
+    <div className="shimmer-row shimmer-gallery-puzzle" style={style}>
       <div className="shimmer-col flex-1">
-        <Thumbnail cssClasses="h-100" />
+        <Thumbnail cssClasses="h-100" fitOnFrame />
       </div>
       <div className="shimmer-col flex-1">
-        <SimpleGallery {...props} cssClasses="h-100" fitOnFrame />
+        <SimpleGallery
+          row={row}
+          col={col}
+          gap={gap}
+          cssClasses="h-100"
+          fitOnFrame
+        />
       </div>
     </div>
   );
+
+  if (!card) return renderContent();
+
+  return <Card cssClasses="p-20">{renderContent()}</Card>;
 };
 
 FeaturedGallery.propTypes = {
   row: PropTypes.number,
   col: PropTypes.oneOf([2, 3, 4]),
   gap: PropTypes.oneOf([20, 30]),
+  card: PropTypes.bool,
+  frameHeight: PropTypes.number,
 };
 
-FeaturedGallery.defaultProps = {};
+FeaturedGallery.defaultProps = {
+  card: false,
+};
 
 export default FeaturedGallery;

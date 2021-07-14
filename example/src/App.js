@@ -37,23 +37,20 @@ export default class App extends Component {
         <CircularImage size={300} />
         <Thumbnail height={300} width={500} cssClasses="m-0" />
         <Separator />
-        <Separator />
-
         <h1>Gallery</h1>
-
-        <Card cssClasses="p-20">
-          <SimpleGallery />
-        </Card>
-
-        <Card cssClasses="p-20">
-          <FeaturedGallery row={2} col={2} />
-        </Card>
-
+        <p>Circular Image Gallery with Caption</p>
+        <SimpleGallery imageType="circular" imageHeight={200} caption />
+        <p>Thumbnail Image Gallery</p>
+        <SimpleGallery card imageHeight={300} />
+        <p>Thumbnail Image Gallery with Caption</p>
+        <SimpleGallery card imageHeight={300} caption />
+        <p>Featured Gallery</p>
+        <FeaturedGallery row={3} col={2} card frameHeight={600} />
+        <Separator />
         <h1>Table</h1>
         <Table row={10} />
-
+        <Separator />
         <h1>Social Post</h1>
-
         <div className="shimmer-row">
           <div className="shimmer-col">
             <SocialPost type="image" />
@@ -63,6 +60,7 @@ export default class App extends Component {
             <SocialPost type="text" />
           </div>
         </div>
+        <Separator />
         <h1>Category Item & List</h1>
         <div className="shimmer-row">
           <div className="shimmer-col">
@@ -124,12 +122,8 @@ export default class App extends Component {
             <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />
           </div>
         </div>
-
-        <h1>Post Details</h1>
-        <PostDetails card cta variant="SIMPLE" />
-        <PostDetails card cta variant="EDITOR" />
+        <Separator />
         <h1>Post Item</h1>
-
         <div className="shimmer-row">
           <div className="shimmer-col">
             <PostItem card title text cta />
@@ -149,9 +143,14 @@ export default class App extends Component {
             />
           </div>
         </div>
+        <Separator />
         <h1>Post List</h1>
         <PostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />
-
+        <Separator />
+        <h1>Post Details</h1>
+        <PostDetails card cta variant="SIMPLE" />
+        <PostDetails card cta variant="EDITOR" />
+        <Separator />
         <h1>Content Block</h1>
         <ContentBlock
           title
@@ -167,8 +166,6 @@ export default class App extends Component {
           thumbnailWidth={370}
           thumbnailHeight={370}
         />
-
-        <Separator />
       </div>
     );
   }

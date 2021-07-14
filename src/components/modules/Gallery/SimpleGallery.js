@@ -1,39 +1,86 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import Thumbnail from "../../common/Image/Thumbnail";
+import { Thumbnail, CircularImage } from "../../common/Image";
+import Title from "../../common/Title";
+import Card from "../../common/Card";
 
-const SimpleGallery = ({ row, col, gap, cssClasses, fitOnFrame }) => {
-  const renderThumbnails = () => {
-    const thumbnails = [];
+const SimpleGallery = ({
+  row,
+  col,
+  gap,
+  cssClasses,
+  fitOnFrame,
+  imageType,
+  imageHeight,
+  caption,
+  card,
+}) => {
+  const renderPhotos = () => {
+    const photos = [];
     const items = row * col;
 
     for (let index = 0; index < items; index++) {
-      thumbnails.push(
-        <Thumbnail
-          key={index}
-          cssClasses={classNames({
-            "m-0": true,
-            "h-100": fitOnFrame,
-          })}
-        />
+      photos.push(
+        <div>
+          {imageType === "thumbnail" && (
+            <Thumbnail
+              key={index}
+              fitOnFrame={fitOnFrame}
+              height={imageHeight}
+              cssClasses={classNames({
+                "m-0": true,
+              })}
+            />
+          )}
+
+          {imageType === "circular" && (
+            <CircularImage size={imageHeight} center />
+          )}
+          {caption && (
+            <Title
+              variant="secondary"
+              cssClasses={classNames({
+                "mt-15": imageType === "thumbnail",
+                "w-50 ml-auto mr-auto circular-image-caption":
+                  imageType === "circular",
+              })}
+            />
+          )}
+        </div>
       );
     }
 
-    return thumbnails;
+    return photos;
   };
 
+  if (!card)
+    return (
+      <div
+        className={classNames({
+          grid: true,
+          [`grid-gap-${gap}`]: true,
+          [`grid-column-${col}`]: true,
+          [cssClasses]: cssClasses,
+        })}
+      >
+        {renderPhotos()}
+      </div>
+    );
+
   return (
-    <div
-      className={classNames({
-        grid: true,
-        [`grid-gap-${gap}`]: true,
-        [`grid-column-${col}`]: true,
-        [cssClasses]: cssClasses,
-      })}
-    >
-      {renderThumbnails()}
-    </div>
+    <Card cssClasses="p-20">
+      <div
+        className={classNames({
+          grid: true,
+          [`grid-gap-${gap}`]: true,
+          [`grid-column-${col}`]: true,
+          [cssClasses]: cssClasses,
+        })}
+      >
+        {renderPhotos()}
+      </div>
+    </Card>
   );
 };
 
@@ -42,6 +89,10 @@ SimpleGallery.propTypes = {
   col: PropTypes.oneOf([2, 3, 4]),
   gap: PropTypes.oneOf([20, 30]),
   fitOnFrame: PropTypes.bool,
+  imageType: PropTypes.oneOf(["thumbnail", "circular"]),
+  imageHeight: PropTypes.number,
+  caption: PropTypes.bool,
+  card: PropTypes.bool,
 };
 
 SimpleGallery.defaultProps = {
@@ -49,6 +100,9 @@ SimpleGallery.defaultProps = {
   col: 3,
   gap: 20,
   fitOnFrame: false,
+  imageType: "thumbnail",
+  caption: false,
+  card: false,
 };
 
 export default SimpleGallery;
