@@ -35,7 +35,7 @@ export default class App extends Component {
         <Title line={3} variant="secondary" />
         <Text />
         <CircularImage size={300} />
-        <Thumbnail height={300} width={500} cssClasses="m-0" rounded />
+        <Thumbnail height={300} width={500} className="m-0" rounded />
         <Separator />
         <h1>Gallery</h1>
         <p>Circular Image Gallery with Caption</p>

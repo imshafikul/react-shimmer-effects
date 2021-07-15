@@ -6,7 +6,7 @@ const Thumbnail = ({
   height,
   width,
   center,
-  cssClasses,
+  className,
   fitOnFrame,
   rounded,
 }) => {
@@ -26,7 +26,7 @@ const Thumbnail = ({
           "h-100": fitOnFrame,
           "shimmer shimmer-thumbnail": true,
           "border-rounded": rounded,
-          [cssClasses]: cssClasses,
+          [className]: className,
         })}
         style={style}
       ></div>
@@ -38,7 +38,7 @@ Thumbnail.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
   center: PropTypes.bool,
-  cssClasses: PropTypes.string,
+  className: PropTypes.string,
   fitOnFrame: PropTypes.bool,
   rounded: PropTypes.bool,
 };

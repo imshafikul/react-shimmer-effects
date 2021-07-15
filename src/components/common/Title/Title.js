@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./title.scss";
 
-const Title = ({ line, gap, variant, cssClasses }) => {
+const Title = ({ line, gap, variant, className }) => {
   const renderLines = () => {
     const title_lines = [];
 
@@ -23,7 +23,7 @@ const Title = ({ line, gap, variant, cssClasses }) => {
         "shimmer-title": variant === "primary",
         "shimmer-title--secondary": variant === "secondary",
         [`grid-gap-${gap}`]: gap,
-        [cssClasses]: cssClasses,
+        [className]: className,
       })}
     >
       {renderLines()}
@@ -35,7 +35,7 @@ Title.propTypes = {
   line: PropTypes.number,
   gap: PropTypes.oneOf([10, 15, 20, 30]),
   variant: PropTypes.oneOf(["primary", "secondary"]),
-  cssClasses: PropTypes.string,
+  className: PropTypes.string,
 };
 
 Title.defaultProps = {

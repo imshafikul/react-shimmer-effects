@@ -12,14 +12,14 @@ const FeaturedGallery = ({ row, col, gap, card, frameHeight }) => {
   const renderContent = () => (
     <div className="shimmer-row shimmer-gallery-puzzle" style={style}>
       <div className="shimmer-col flex-1">
-        <Thumbnail cssClasses="h-100" fitOnFrame />
+        <Thumbnail className="h-100" fitOnFrame />
       </div>
       <div className="shimmer-col flex-1">
         <SimpleGallery
           row={row}
           col={col}
           gap={gap}
-          cssClasses="h-100"
+          className="h-100"
           fitOnFrame
         />
       </div>

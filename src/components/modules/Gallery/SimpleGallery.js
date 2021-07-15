@@ -9,7 +9,7 @@ const SimpleGallery = ({
   row,
   col,
   gap,
-  cssClasses,
+  className,
   fitOnFrame,
   imageType,
   imageHeight,
@@ -28,7 +28,7 @@ const SimpleGallery = ({
               key={index}
               fitOnFrame={fitOnFrame}
               height={imageHeight}
-              cssClasses={classNames({
+              className={classNames({
                 "m-0": true,
               })}
             />
@@ -40,7 +40,7 @@ const SimpleGallery = ({
           {caption && (
             <Title
               variant="secondary"
-              cssClasses={classNames({
+              className={classNames({
                 "mt-15": imageType === "thumbnail",
                 "w-50 ml-auto mr-auto circular-image-caption":
                   imageType === "circular",
@@ -61,7 +61,7 @@ const SimpleGallery = ({
           grid: true,
           [`grid-gap-${gap}`]: true,
           [`grid-column-${col}`]: true,
-          [cssClasses]: cssClasses,
+          [className]: className,
         })}
       >
         {renderPhotos()}
@@ -75,7 +75,7 @@ const SimpleGallery = ({
           grid: true,
           [`grid-gap-${gap}`]: true,
           [`grid-column-${col}`]: true,
-          [cssClasses]: cssClasses,
+          [className]: className,
         })}
       >
         {renderPhotos()}

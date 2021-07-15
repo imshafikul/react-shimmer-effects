@@ -33,11 +33,11 @@ const ContentBlock = ({
           <Thumbnail
             width={thumbnailWidth}
             height={thumbnailHeight}
-            cssClasses="h-100 m-0"
+            className="h-100 m-0"
           />
         </div>
         <div className=" flex-1 p-30">
-          {title && <Title cssClasses="w-40" line={1} />}
+          {title && <Title className="w-40" line={1} />}
           {text && <Text />}
           {cta && <Button />}
         </div>

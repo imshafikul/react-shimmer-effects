@@ -74,7 +74,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
 
   return (
     <Card paddingSize={20}>
-      {title && <Title line={1} cssClasses="w-60" />}
+      {title && <Title line={1} className="w-60" />}
       {renderItems()}
     </Card>
   );

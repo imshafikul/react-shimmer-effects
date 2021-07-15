@@ -20,7 +20,7 @@ const CategoryItem = ({
     <div>
       {!hasImage ? (
         <div>
-          <Title variant="secondary" line={1} cssClasses="mb-15 w-80" />
+          <Title variant="secondary" line={1} className="mb-15 w-80" />
           <div className="w-40">
             <Text line={3} gap={10} />
           </div>
@@ -40,7 +40,7 @@ const CategoryItem = ({
 
           <div className="flex-1 p-15">
             {title && <Title variant="secondary" />}
-            {text && <Text line={3} gap={10} cssClasses="mb-20" />}
+            {text && <Text line={3} gap={10} className="mb-20" />}
             {cta && <Button size="sm" />}
           </div>
         </div>

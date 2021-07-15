@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import PostItem from "./Item";
 
-const PostList = ({ row, col, gap, cssClasses, postStyle }) => {
+const PostList = ({ row, col, gap, className, postStyle }) => {
   const posts = {
     STYLE_ONE: <PostItem title text cta />,
     STYLE_TWO: <PostItem title cta />,
@@ -58,7 +58,7 @@ const PostList = ({ row, col, gap, cssClasses, postStyle }) => {
         grid: true,
         [`grid-gap-${gap}`]: true,
         [`grid-column-${col}`]: true,
-        [cssClasses]: cssClasses,
+        [className]: className,
       })}
     >
       {renderPosts()}

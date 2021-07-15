@@ -13,13 +13,13 @@ const PostItem = ({ cta, title, text, imageType, imageWidth, imageHeight }) => {
         <Thumbnail
           height={imageHeight}
           width={imageWidth}
-          cssClasses={
+          className={
             imageWidth && imageWidth !== "w-100" ? "m-30 mb-0" : "mb-0"
           }
         />
       )}
       {imageType === "circular" && (
-        <CircularImage size={imageWidth} cssClasses="m-30 mb-0" />
+        <CircularImage size={imageWidth} className="m-30 mb-0" />
       )}
       <div className="p-30">
         {title && <Title variant="secondary" />}

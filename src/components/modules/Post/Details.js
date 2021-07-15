@@ -10,30 +10,30 @@ const PostDetails = ({ variant, cta, card }) => {
   const variants = {
     SIMPLE: (
       <div>
-        <Title line={1} cssClasses="w-40" />
-        <Title line={1} variant="secondary" cssClasses="w-20 mb-40" />
+        <Title line={1} className="w-40" />
+        <Title line={1} variant="secondary" className="w-20 mb-40" />
 
         <div className="w-40 mb-40">
-          <Text line={1} cssClasses="mb-15 w-20" />
-          <Text line={1} cssClasses="mb-15 w-40" />
-          <Text line={1} cssClasses="mb-30 w-60" />
+          <Text line={1} className="mb-15 w-20" />
+          <Text line={1} className="mb-15 w-40" />
+          <Text line={1} className="mb-30 w-60" />
         </div>
 
-        <Title line={1} variant="secondary" cssClasses="w-30" />
-        <Text cssClasses="mb-40" />
-        <Title line={1} variant="secondary" cssClasses="w-30" />
-        <Text cssClasses="mb-40" />
-        <Title line={1} variant="secondary" cssClasses="w-30" />
-        <Text cssClasses="mb-40" />
-        <Title line={1} variant="secondary" cssClasses="w-30" />
-        <Text cssClasses="mb-40" />
+        <Title line={1} variant="secondary" className="w-30" />
+        <Text className="mb-40" />
+        <Title line={1} variant="secondary" className="w-30" />
+        <Text className="mb-40" />
+        <Title line={1} variant="secondary" className="w-30" />
+        <Text className="mb-40" />
+        <Title line={1} variant="secondary" className="w-30" />
+        <Text className="mb-40" />
 
         {cta && <Button />}
       </div>
     ),
     EDITOR: (
       <div>
-        <Title line={1} cssClasses="w-40" />
+        <Title line={1} className="w-40" />
         <Thumbnail height={400} />
         <Text />
         <Text />

@@ -8,14 +8,14 @@ import PropTypes from "prop-types";
 const SocialPost = ({ type, title }) => {
   const renderContents = () => {
     if (type === "image") {
-      return <Thumbnail height={300} cssClasses="m-02" />;
+      return <Thumbnail height={300} className="m-02" />;
     } else if (type === "text") {
-      return <Text line={13} cssClasses="p-15" />;
+      return <Text line={13} className="p-15" />;
     } else {
       return (
         <div>
-          <Text line={3} cssClasses="p-15" />
-          <Thumbnail height={300} cssClasses="m-02" />
+          <Text line={3} className="p-15" />
+          <Thumbnail height={300} className="m-02" />
         </div>
       );
     }
@@ -27,17 +27,17 @@ const SocialPost = ({ type, title }) => {
         <div className="flex">
           <CircularImage />
           <div className="flex-1 p-15">
-            <Title variant="secondary" cssClasses="w-40" />
+            <Title variant="secondary" className="w-40" />
           </div>
         </div>
-        {title && <Title variant line={1} cssClasses="w-40 m-0" />}
+        {title && <Title variant line={1} className="w-40 m-0" />}
       </div>
 
       {renderContents()}
 
       <div className="p-15 flex flex-content-between">
-        <Title line={1} cssClasses="w-10" variant="secondary" />
-        <Title line={1} cssClasses="w-10" variant="secondary" />
+        <Title line={1} className="w-10" variant="secondary" />
+        <Title line={1} className="w-10" variant="secondary" />
       </div>
     </Card>
   );

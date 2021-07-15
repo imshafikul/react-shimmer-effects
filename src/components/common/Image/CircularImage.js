@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-const CircularImage = ({ size, center, cssClasses }) => {
+const CircularImage = ({ size, center, className }) => {
   const style = {};
   if (size) {
     style.width = `${size}px`;
@@ -19,7 +19,7 @@ const CircularImage = ({ size, center, cssClasses }) => {
         style={style}
         className={classNames({
           "shimmer shimmer-avatar": true,
-          [cssClasses]: cssClasses,
+          [className]: className,
         })}
       ></div>
     </div>
@@ -29,7 +29,7 @@ const CircularImage = ({ size, center, cssClasses }) => {
 CircularImage.propTypes = {
   size: PropTypes.number,
   center: PropTypes.bool,
-  cssClasses: PropTypes.string,
+  className: PropTypes.string,
 };
 
 CircularImage.defaultProps = {
