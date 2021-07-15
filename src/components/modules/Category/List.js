@@ -73,7 +73,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
   };
 
   return (
-    <Card cssClasses="p-15">
+    <Card paddingSize={20}>
       {title && <Title line={1} cssClasses="w-60" />}
       {renderItems()}
     </Card>

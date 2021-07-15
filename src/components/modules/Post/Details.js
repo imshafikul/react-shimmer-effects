@@ -56,7 +56,7 @@ const PostDetails = ({ variant, cta, card }) => {
 
   if (!card) return variants[variant];
 
-  return <Card cssClasses="p-30">{variants[variant]}</Card>;
+  return <Card paddingSize={30}>{variants[variant]}</Card>;
 };
 
 PostDetails.propTypes = {

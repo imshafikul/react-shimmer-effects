@@ -28,7 +28,7 @@ const FeaturedGallery = ({ row, col, gap, card, frameHeight }) => {
 
   if (!card) return renderContent();
 
-  return <Card cssClasses="p-20">{renderContent()}</Card>;
+  return <Card paddingSize={20}>{renderContent()}</Card>;
 };
 
 FeaturedGallery.propTypes = {

@@ -69,7 +69,7 @@ const SimpleGallery = ({
     );
 
   return (
-    <Card cssClasses="p-20">
+    <Card paddingSize={20}>
       <div
         className={classNames({
           grid: true,

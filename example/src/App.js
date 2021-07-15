@@ -64,7 +64,7 @@ export default class App extends Component {
         <h1>Category Item & List</h1>
         <div className="shimmer-row">
           <div className="shimmer-col">
-            <Card cssClasses="p-30">
+            <Card paddingSize={30}>
               <CategoryItem />
 
               <CategoryItem
