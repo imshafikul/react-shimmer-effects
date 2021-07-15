@@ -22,7 +22,7 @@ const SimpleGallery = ({
 
     for (let index = 0; index < items; index++) {
       photos.push(
-        <div>
+        <div key={index}>
           {imageType === "thumbnail" && (
             <Thumbnail
               key={index}

@@ -57,7 +57,7 @@ ContentBlock.propTypes = {
   cta: PropTypes.bool,
   thumbnailWidth: PropTypes.number,
   thumbnailHeight: PropTypes.number,
-  reverse: PropTypes.number,
+  reverse: PropTypes.bool,
 };
 
 ContentBlock.defaultProps = {
