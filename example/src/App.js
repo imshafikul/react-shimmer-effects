@@ -21,12 +21,17 @@ import {
   PostList,
   ContentBlock,
 } from "shimmer-react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import CodePreview from "./components/CodePreview";
+import { code } from "./configs";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Elements</h1>
+        <h1 className="d-flex justify-content-between">
+          Elements <CodePreview title="Button" code={code.button} />
+        </h1>
         <Button size="sm" />
         <Button size="md" />
         <Button size="lg" />
