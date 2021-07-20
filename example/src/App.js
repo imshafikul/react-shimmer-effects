@@ -30,7 +30,7 @@ export default class App extends Component {
     return (
       <div>
         <h1 className="d-flex justify-content-between">
-          Elements <CodePreview title="Button" code={code.button} />
+          Elements <CodePreview title="Elements" code={code.ELEMENTS} />
         </h1>
         <Button size="sm" />
         <Button size="md" />
@@ -43,19 +43,51 @@ export default class App extends Component {
         <Thumbnail height={300} width={500} className="m-0" rounded />
         <Separator />
         <h1>Gallery</h1>
-        <p>Circular Image Gallery with Caption</p>
+        <p className="d-flex justify-content-between">
+          Circular Image Gallery with Caption
+          <CodePreview
+            title="Circular Image Gallery with caption"
+            code={code.CIRCULAR_IMAGE_GALLERY_WITH_CAPTION}
+          />
+        </p>
         <SimpleGallery imageType="circular" imageHeight={200} caption />
-        <p>Thumbnail Image Gallery</p>
+        <p className="d-flex justify-content-between">
+          Thumbnail Image Gallery{" "}
+          <CodePreview
+            title="Thumbnail Image Gallery"
+            code={code.THUMBNAIL_IMAGE_GALLERY}
+          />
+        </p>
         <SimpleGallery card imageHeight={300} />
-        <p>Thumbnail Image Gallery with Caption</p>
+        <br />
+        <p className="d-flex justify-content-between">
+          Thumbnail Image Gallery with Caption{" "}
+          <CodePreview
+            title="Thumbnail Image Gallery"
+            code={code.THUMBNAIL_IMAGE_GALLERY_WITH_CAPTION}
+          />
+        </p>
         <SimpleGallery card imageHeight={300} caption />
-        <p>Featured Gallery</p>
+        <br />
+        <p className="d-flex justify-content-between">
+          Featured Gallery{" "}
+          <CodePreview
+            title="Thumbnail Image Gallery"
+            code={code.FEATURED_GALLERY}
+          />
+        </p>
         <FeaturedGallery row={3} col={2} card frameHeight={600} />
         <Separator />
-        <h1>Table</h1>
+        <h1 className="d-flex justify-content-between">
+          Table{" "}
+          <CodePreview title="Thumbnail Image Gallery" code={code.TABLE} />
+        </h1>
         <Table row={10} />
         <Separator />
-        <h1>Social Post</h1>
+        <h1 className="d-flex justify-content-between">
+          Social Post{" "}
+          <CodePreview title="Social Post" code={code.SOCIAL_POST} />
+        </h1>
         <div className="shimmer-row">
           <div className="shimmer-col">
             <SocialPost type="image" />
@@ -63,12 +95,17 @@ export default class App extends Component {
           </div>
           <div className="shimmer-col">
             <SocialPost type="text" />
+            <SocialPost type="text" title />
           </div>
         </div>
         <Separator />
         <h1>Category Item & List</h1>
         <div className="shimmer-row">
           <div className="shimmer-col">
+            <p className="d-flex justify-content-between">
+              Category Items{" "}
+              <CodePreview title="Category Items" code={code.CATEGORY_ITEMS} />
+            </p>
             <Card paddingSize={30}>
               <CategoryItem />
 
@@ -124,11 +161,17 @@ export default class App extends Component {
             </Card>
           </div>
           <div className="shimmer-col">
+            <p className="d-flex justify-content-between">
+              Category List{" "}
+              <CodePreview title="Category List" code={code.CATEGORY_LISTS} />
+            </p>
             <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />
           </div>
         </div>
         <Separator />
-        <h1>Post Item</h1>
+        <h1 className="d-flex justify-content-between">
+          Post Item <CodePreview title="Post Item" code={code.POST_ITEMS} />
+        </h1>
         <div className="shimmer-row">
           <div className="shimmer-col">
             <PostItem card title text cta />
@@ -149,14 +192,23 @@ export default class App extends Component {
           </div>
         </div>
         <Separator />
-        <h1>Post List</h1>
+        <h1 className="d-flex justify-content-between">
+          Post List <CodePreview title=" Post List" code={code.POST_LIST} />
+        </h1>
         <PostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />
         <Separator />
-        <h1>Post Details</h1>
+        <h1 className="d-flex justify-content-between">
+          Post Details{" "}
+          <CodePreview title="Post Details" code={code.POST_DETAILS} />
+        </h1>
         <PostDetails card cta variant="SIMPLE" />
         <PostDetails card cta variant="EDITOR" />
         <Separator />
-        <h1>Content Block</h1>
+
+        <h1 className="d-flex justify-content-between">
+          Content Blocks{" "}
+          <CodePreview title="Content Blocks" code={code.CONTENT_BLOCK} />
+        </h1>
         <ContentBlock
           title
           text
