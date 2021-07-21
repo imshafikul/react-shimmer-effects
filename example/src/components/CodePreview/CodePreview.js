@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { CopyBlock, atomOneLight } from "react-code-blocks";
 import PropTypes from "prop-types";
-import { codeIcon, closeIcon } from "../assets";
+import { codeIcon, closeIcon } from "../../assets";
 
 const CodePreview = ({ title, code }) => {
   const [modal, setModal] = useState(false);
