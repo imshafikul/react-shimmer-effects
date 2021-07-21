@@ -1,0 +1,189 @@
+/*
+=====
+Padding Styles
+=====
+*/
+
+.p-30 {
+  padding: 30px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+/*
+=====
+Margin Styles
+=====
+*/
+
+.m-0 {
+  margin: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.m-30 {
+  margin: 30px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/*
+=======
+Content Size Styles
+=======
+*/
+
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+/*
+========
+Flex Styles
+========
+*/
+.flex {
+  display: flex;
+}
+
+.flex-horizontal-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.flex-content-between {
+  justify-content: space-between;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+/*
+=======
+Grid Styles
+=======
+*/
+.grid {
+  display: grid;
+}
+
+.grid-gap-10 {
+  gap: 10px;
+}
+
+.grid-gap-15 {
+  gap: 15px;
+}
+
+.grid-gap-20 {
+  gap: 20px;
+}
+
+.grid-gap-30 {
+  gap: 30px;
+}
+
+.grid-column-2 {
+  grid-template-columns: auto auto;
+}
+
+.grid-column-3 {
+  grid-template-columns: auto auto auto;
+}
+
+.grid-column-4 {
+  grid-template-columns: auto auto auto auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-rounded {
+  border-radius: 4px;
+}
+
+.h-100 {
+  height: 100% !important;
+}
