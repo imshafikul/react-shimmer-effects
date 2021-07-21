@@ -5,9 +5,9 @@ import { code } from "../../configs";
 
 const PostDetailsDemo = () => (
   <div>
-    <h1 className="d-flex justify-content-between">
+    <h3 className="d-flex justify-content-between">
       Post Details <CodePreview title="Post Details" code={code.POST_DETAILS} />
-    </h1>
+    </h3>
     <PostDetails card cta variant="SIMPLE" />
     <PostDetails card cta variant="EDITOR" />
     <Separator />

@@ -13,9 +13,9 @@ import { code } from "../../configs";
 
 const ElementsDemo = () => (
   <div>
-    <h1 className="d-flex justify-content-between">
+    <h3 className="d-flex justify-content-between">
       Elements <CodePreview title="Elements" code={code.ELEMENTS} />
-    </h1>
+    </h3>
     <Button size="sm" />
     <Button size="md" />
     <Button size="lg" />

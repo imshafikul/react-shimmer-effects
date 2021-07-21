@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import CategoryDemo from "./CategoryDemo";
 import ContentBlockDemo from "./ContentBlockDemo";
 import ElementsDemo from "./ElementsDemo";
@@ -11,7 +12,8 @@ import TableDemo from "./TableDemo";
 
 const Demo = () => {
   return (
-    <div>
+    <Container fluid="sm">
+      <h1 className="text-center app-title">Shimmer React Demo</h1>
       <ElementsDemo />
       <GalleryDemo />
       <TableDemo />
@@ -21,7 +23,7 @@ const Demo = () => {
       <PostListDemo />
       <PostDetailsDemo />
       <ContentBlockDemo />
-    </div>
+    </Container>
   );
 };
 

@@ -5,9 +5,9 @@ import { code } from "../../configs";
 
 const PostItemDemo = () => (
   <div>
-    <h1 className="d-flex justify-content-between">
+    <h3 className="d-flex justify-content-between">
       Post Item <CodePreview title="Post Item" code={code.POST_ITEMS} />
-    </h1>
+    </h3>
     <div className="shimmer-row">
       <div className="shimmer-col">
         <PostItem card title text cta />

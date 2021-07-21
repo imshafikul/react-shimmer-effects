@@ -5,3 +5,7 @@ body {
   padding: 0;
   font-family: Roboto;
 }
+
+.app-title {
+  margin: 30px 0;
+}

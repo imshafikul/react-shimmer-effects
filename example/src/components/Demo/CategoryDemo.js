@@ -5,13 +5,13 @@ import { code } from "../../configs";
 
 const CategoryDemo = () => (
   <div>
-    <h1>Category Item & List</h1>
+    <h3>Category Item & List</h3>
     <div className="shimmer-row">
       <div className="shimmer-col">
-        <p className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between">
           Category Items{" "}
           <CodePreview title="Category Items" code={code.CATEGORY_ITEMS} />
-        </p>
+        </div>
         <Card paddingSize={30}>
           <CategoryItem />
 
@@ -67,10 +67,10 @@ const CategoryDemo = () => (
         </Card>
       </div>
       <div className="shimmer-col">
-        <p className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between">
           Category List{" "}
           <CodePreview title="Category List" code={code.CATEGORY_LISTS} />
-        </p>
+        </div>
         <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />
       </div>
     </div>

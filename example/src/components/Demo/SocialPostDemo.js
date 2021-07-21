@@ -5,9 +5,9 @@ import { code } from "../../configs";
 
 const SocialPostDemo = () => (
   <div>
-    <h1 className="d-flex justify-content-between">
+    <h3 className="d-flex justify-content-between">
       Social Post <CodePreview title="Social Post" code={code.SOCIAL_POST} />
-    </h1>
+    </h3>
     <div className="shimmer-row">
       <div className="shimmer-col">
         <SocialPost type="image" />

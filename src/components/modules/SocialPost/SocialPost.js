@@ -30,7 +30,7 @@ const SocialPost = ({ type, title }) => {
             <Title variant="secondary" className="w-40" />
           </div>
         </div>
-        {title && <Title variant line={1} className="w-40 m-0" />}
+        {title && <Title line={1} className="w-40 m-0" />}
       </div>
 
       {renderContents()}

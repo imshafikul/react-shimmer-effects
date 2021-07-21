@@ -5,9 +5,9 @@ import { code } from "../../configs";
 
 const TableDemo = () => (
   <div>
-    <h1 className="d-flex justify-content-between">
+    <h3 className="d-flex justify-content-between">
       Table <CodePreview title="Thumbnail Image Gallery" code={code.TABLE} />
-    </h1>
+    </h3>
     <Table row={10} />
     <Separator />
   </div>
