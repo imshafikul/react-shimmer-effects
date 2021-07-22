@@ -47,6 +47,7 @@ Thumbnail.defaultProps = {
   canter: false,
   fitOnFrame: false,
   rounded: false,
+  height: 250,
 };
 
 export default Thumbnail;

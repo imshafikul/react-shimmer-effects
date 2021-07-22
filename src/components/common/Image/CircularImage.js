@@ -33,7 +33,8 @@ CircularImage.propTypes = {
 };
 
 CircularImage.defaultProps = {
-  canter: false,
+  center: false,
+  size: 80,
 };
 
 export default CircularImage;
