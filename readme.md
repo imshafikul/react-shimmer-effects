@@ -140,7 +140,7 @@ class Example extends Component {
 | Property     | Type   | Required | Default value | Description                                                |
 | :----------- | :----- | :------- | :------------ | :--------------------------------------------------------- |
 | `width`      | number | no       |               | Width of Thumbnail. By default 100% width                  |
-| `height`     | number | no       | 250           | Width of Thumbnail. By default 100% width                  |
+| `height`     | number | no       | 250           | Height of Thumbnail.                                       |
 | `center`     | bool   | no       | false         | Center alignment                                           |
 | `className`  | string | no       |               | Additonal style classes                                    |
 | `rounded`    | bool   | no       | false         | Border radius option enable/disable                        |
@@ -148,7 +148,6 @@ class Example extends Component {
 
 ---
 
-```
 ## License
+
 MIT © [Shafikul Islam](https://github.com/shafikulz)
-```
