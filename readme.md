@@ -18,7 +18,7 @@ import { Button } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Button />;
+    return <Button size="md" />;
   }
 }
 ```
@@ -39,7 +39,7 @@ import { Badge } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Badge />;
+    return <Badge width={120} />;
   }
 }
 ```
@@ -60,7 +60,7 @@ import { Title } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Title />;
+    return <Title line={2} gap={10} variant="primary" />;
   }
 }
 ```
@@ -84,7 +84,7 @@ import { Text } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Text />;
+    return <Text line={5} gap={10} />;
   }
 }
 ```
@@ -107,7 +107,7 @@ import { CircularImage } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <CircularImage />;
+    return <CircularImage size={150} />;
   }
 }
 ```
@@ -130,7 +130,7 @@ import { Thumbnail } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Thumbnail />;
+    return <Thumbnail height={250} rounded />;
   }
 }
 ```
@@ -140,11 +140,72 @@ class Example extends Component {
 | Property     | Type   | Required | Default value | Description                                                |
 | :----------- | :----- | :------- | :------------ | :--------------------------------------------------------- |
 | `width`      | number | no       |               | Width of Thumbnail. By default 100% width                  |
-| `height`     | number | no       | 250           | Height of Thumbnail.                                       |
+| `height`     | number | yes      | 250           | Height of Thumbnail.                                       |
 | `center`     | bool   | no       | false         | Center alignment                                           |
 | `className`  | string | no       |               | Additonal style classes                                    |
 | `rounded`    | bool   | no       | false         | Border radius option enable/disable                        |
 | `fitOnFrame` | bool   | no       | false         | Adjust height of parent. Will block 100% of parent element |
+
+---
+
+## Gallery
+
+### Simple Gallery
+
+```jsx
+import React from "react";
+import { SimpleGallery } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <>
+        <SimpleGallery imageType="circular" imageHeight={200} caption />
+        <SimpleGallery card imageHeight={300} />
+        <SimpleGallery card imageHeight={300} caption />
+      </>
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property      | Type   | Required | Default value | Description                                                  |
+| :------------ | :----- | :------- | :------------ | :----------------------------------------------------------- |
+| `card`        | bool   | no       | false         | Card Style enable/disable                                    |
+| `row`         | number | yes      | 3             | Number of row in your gallery                                |
+| `col`         | number | yes      | 3             | Number of column in a row. Three options available [2, 3, 4] |
+| `gap`         | number | yes      | 20            | Gap between columns. Two options only [20, 30]               |
+| `imageType`   | string | yes      | thumbnail     | Image Style. Two options only ["thumbnail", "circular"]      |
+| `imageHeight` | number |          |               | Image Height                                                 |
+| `caption`     | bool   | no       | false         | Image Caption                                                |
+| `fitOnFrame`  | bool   | no       | false         | Adjust height of parent. Will block 100% of parent element   |
+
+---
+
+### Featured Gallery
+
+```jsx
+import React from "react";
+import { FeaturedGallery } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return <FeaturedGallery row={2} col={2} card frameHeight={600} />;
+  }
+}
+```
+
+#### Properties
+
+| Property      | Type   | Required | Default value | Description                                                  |
+| :------------ | :----- | :------- | :------------ | :----------------------------------------------------------- |
+| `card`        | bool   | no       | false         | Card Style enable/disable                                    |
+| `row`         | number | yes      | 2             | Number of row in your gallery                                |
+| `col`         | number | yes      | 2             | Number of column in a row. Three options available [2, 3, 4] |
+| `gap`         | number | yes      | 20            | Gap between columns. Two options only [20, 30]               |
+| `frameHeight` | number | yes      | 600           | Height of full frame                                         |
 
 ---
 

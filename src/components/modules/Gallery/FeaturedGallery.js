@@ -41,6 +41,10 @@ FeaturedGallery.propTypes = {
 
 FeaturedGallery.defaultProps = {
   card: false,
+  row: 2,
+  col: 2,
+  gap: 20,
+  frameHeight: 600,
 };
 
 export default FeaturedGallery;

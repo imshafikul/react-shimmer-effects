@@ -39,7 +39,7 @@ const GalleryDemo = () => (
         code={code.FEATURED_GALLERY}
       />
     </div>
-    <FeaturedGallery row={3} col={2} card frameHeight={600} />
+    <FeaturedGallery row={2} col={2} card frameHeight={600} />
     <Separator />
   </div>
 );
