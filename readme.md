@@ -1,11 +1,19 @@
 # shimmer-react
 
-> Complete shimmer effects for React
+Customizable shimmer effects for React.
+
+### [**Live Demo**](https://shafikulz.github.io/shimmer-react/)
 
 ## Install
 
 ```bash
-npm install --save shimmer-react
+npm install shimmer-react --save
+```
+
+or
+
+```bash
+yarn add shimmer-react
 ```
 
 ## Elements
@@ -487,6 +495,12 @@ class Example extends Component {
 | `variant` | string | yes      | SIMPLE        | Two options only ["SIMPLE", "EDITOR"] |
 | `card`    | bool   | no       | false         | Card Style enable/disable             |
 | `cta`     | bool   | no       | false         | Call to Action                        |
+
+
+## Contribute
+
+Feel free to send PR and any suggestions. Thanks
+
 
 ## License
 
