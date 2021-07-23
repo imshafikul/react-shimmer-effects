@@ -367,6 +367,37 @@ class Example extends Component {
 
 ---
 
+## Post
+
+### Social Post Item
+
+```jsx
+import React from "react";
+import { SocialPost } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <>
+        <SocialPost type="image" />
+        <SocialPost type="both" />
+        <SocialPost type="text" />
+        <SocialPost type="text" title />
+      </>
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property | Type   | Required | Default value | Description                                                                       |
+| :------- | :----- | :------- | :------------ | :-------------------------------------------------------------------------------- |
+| `title`  | bool   | no       | false         | Title                                                                             |
+| `type`   | string | yes      | image         | Style type of the Social post. Three variations available `image`, `text`, `both` |
+
+---
+
 ## License
 
 MIT © [Shafikul Islam](https://github.com/shafikulz)
