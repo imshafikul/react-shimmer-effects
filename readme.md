@@ -398,6 +398,96 @@ class Example extends Component {
 
 ---
 
+### Post Item
+
+```jsx
+import React from "react";
+import { PostItem } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <>
+        <PostItem card title text cta />
+        <PostItem card title cta />
+        <PostItem
+          card
+          title
+          cta
+          imageType="thumbnail"
+          imageWidth={80}
+          imageHeight={80}
+          contentCenter
+        />
+      </>
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property      | Type   | Required | Default value | Description                                            |
+| :------------ | :----- | :------- | :------------ | :----------------------------------------------------- |
+| `imageType`   | string | yes      | thumbnail     | Image Type. Two options only ["thumbnail", "circular"] |
+| `imageWidth`  | number | yes      |               | Width of the image                                     |
+| `imageHeight` | number | yes      |               | Height of the image                                    |
+| `title`       | bool   | no       | false         | Title                                                  |
+| `text`        | bool   | no       | false         | Content Text                                           |
+| `cta`         | bool   | no       | false         | Call to Action                                         |
+
+---
+
+### Post List
+
+```jsx
+import React from "react";
+import { PostList } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return <PostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />;
+  }
+}
+```
+
+#### Properties
+
+| Property    | Type   | Required | Default value | Description                                                                                                                                            |
+| :---------- | :----- | :------- | :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `row`       | number | yes      | 2             | Number of row                                                                                                                                          |
+| `col`       | number | yes      | 2             | Number of column in a row. Three options available [2, 3, 4]                                                                                           |
+| `gap`       | number | yes      | 20            | Gap between columns. Two options only [20, 30]                                                                                                         |
+| `postStyle` | string | yes      | STYLE_FOUR    | Category style . Eight variation available `STYLE_ONE`, `STYLE_TWO`,`STYLE_THREE`,`STYLE_FOUR`, `STYLE_FIVE`, `STYLE_SIX`, `STYLE_SEVEN`,`STYLE_EIGHT` |
+
+---
+
+### Post Details
+
+```jsx
+import React from "react";
+import { PostDetails } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <>
+        <PostDetails card cta variant="SIMPLE" />
+        <PostDetails card cta variant="EDITOR" />
+      </>
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property  | Type   | Required | Default value | Description                           |
+| :-------- | :----- | :------- | :------------ | :------------------------------------ |
+| `variant` | string | yes      | SIMPLE        | Two options only ["SIMPLE", "EDITOR"] |
+| `card`    | bool   | no       | false         | Card Style enable/disable             |
+| `cta`     | bool   | no       | false         | Call to Action                        |
+
 ## License
 
 MIT © [Shafikul Islam](https://github.com/shafikulz)
