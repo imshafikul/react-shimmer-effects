@@ -209,6 +209,28 @@ class Example extends Component {
 
 ---
 
+## Table
+
+```jsx
+import React from "react";
+import { Table } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return <Table row={5} col={5} />;
+  }
+}
+```
+
+#### Properties
+
+| Property | Type   | Required | Default value | Description                 |
+| :------- | :----- | :------- | :------------ | :-------------------------- |
+| `row`    | number | yes      | 5             | Number of row in your Table |
+| `col`    | number | yes      | 5             | Number of column in a row   |
+
+---
+
 ## License
 
 MIT © [Shafikul Islam](https://github.com/shafikulz)
