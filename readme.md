@@ -231,6 +231,35 @@ class Example extends Component {
 
 ---
 
+## Content Block
+
+```jsx
+import React from "react";
+import { ContentBlock } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <ContentBlock title text cta thumbnailWidth={370} thumbnailHeight={370} />
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property          | Type   | Required | Default value | Description                   |
+| :---------------- | :----- | :------- | :------------ | :---------------------------- |
+| `card`            | bool   | no       | true          | Card Style enable/disable     |
+| `title`           | bool   | no       | false         | Title                         |
+| `text`            | bool   | no       | false         | Content Text                  |
+| `cta`             | bool   | no       | false         | Call to Action                |
+| `thumbnailWidth`  | number | yes      | false         | Width of the thumbnail image  |
+| `thumbnailHeight` | number | yes      | false         | Height of the thumbnail image |
+| `reverse`         | bool   | no       | false         | Alternate Style option        |
+
+---
+
 ## License
 
 MIT © [Shafikul Islam](https://github.com/shafikulz)
