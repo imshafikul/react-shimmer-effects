@@ -177,7 +177,7 @@ class Example extends Component {
 | `row`         | number | yes      | 3             | Number of row in your gallery                                |
 | `col`         | number | yes      | 3             | Number of column in a row. Three options available [2, 3, 4] |
 | `gap`         | number | yes      | 20            | Gap between columns. Two options only [20, 30]               |
-| `imageType`   | string | yes      | thumbnail     | Image Style. Two options only ["thumbnail", "circular"]      |
+| `imageType`   | string | yes      | thumbnail     | Image Type. Two options only ["thumbnail", "circular"]       |
 | `imageHeight` | number |          |               | Image Height                                                 |
 | `caption`     | bool   | no       | false         | Image Caption                                                |
 | `fitOnFrame`  | bool   | no       | false         | Adjust height of parent. Will block 100% of parent element   |
@@ -254,9 +254,116 @@ class Example extends Component {
 | `title`           | bool   | no       | false         | Title                         |
 | `text`            | bool   | no       | false         | Content Text                  |
 | `cta`             | bool   | no       | false         | Call to Action                |
-| `thumbnailWidth`  | number | yes      | false         | Width of the thumbnail image  |
-| `thumbnailHeight` | number | yes      | false         | Height of the thumbnail image |
+| `thumbnailWidth`  | number | yes      |               | Width of the thumbnail image  |
+| `thumbnailHeight` | number | yes      |               | Height of the thumbnail image |
 | `reverse`         | bool   | no       | false         | Alternate Style option        |
+
+---
+
+## Category
+
+### Category Item
+
+```jsx
+import React from "react";
+import { CategoryItem } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <>
+        <CategoryItem />
+
+        <CategoryItem
+          hasImage
+          imageType="thumbnail"
+          imageWidth={100}
+          imageHeight={100}
+          title
+        />
+
+        <CategoryItem
+          hasImage
+          imageType="circular"
+          imageWidth={100}
+          imageHeight={100}
+          title
+        />
+
+        <CategoryItem
+          hasImage
+          imageType="thumbnail"
+          imageWidth={100}
+          imageHeight={100}
+          text
+        />
+
+        <CategoryItem
+          hasImage
+          imageType="circular"
+          imageWidth={100}
+          imageHeight={100}
+          text
+        />
+
+        <CategoryItem
+          hasImage
+          imageType="thumbnail"
+          imageWidth={100}
+          imageHeight={100}
+          text
+          cta
+        />
+
+        <CategoryItem
+          hasImage
+          imageType="circular"
+          imageWidth={100}
+          imageHeight={100}
+          text
+          cta
+        />
+      </>
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property        | Type   | Required | Default value | Description                                            |
+| :-------------- | :----- | :------- | :------------ | :----------------------------------------------------- |
+| `hasImage`      | bool   | no       | false         | Thumbnail Image                                        |
+| `imageType`     | string | yes      | thumbnail     | Image Type. Two options only ["thumbnail", "circular"] |
+| `imageWidth`    | number | yes      |               | Width of the image                                     |
+| `imageHeight`   | number | yes      |               | Height of the image                                    |
+| `title`         | bool   | no       | false         | Title                                                  |
+| `text`          | bool   | no       | false         | Content Text                                           |
+| `cta`           | bool   | no       | false         | Call to Action                                         |
+| `contentCenter` | bool   | no       | false         | Content Alignment                                      |
+
+---
+
+### Category List
+
+```jsx
+import React from "react";
+import { CategoryList } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />;
+  }
+}
+```
+
+#### Properties
+
+| Property        | Type   | Required | Default value | Description                                                                                                                              |
+| :-------------- | :----- | :------- | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| `title`         | bool   | no       | false         | Title                                                                                                                                    |
+| `items`         | number | yes      | 5             | Number of items in the list                                                                                                              |
+| `categoryStyle` | string | yes      | STYLE_ONE     | Category style . Seven variation available `STYLE_ONE`, `STYLE_TWO`,`STYLE_THREE`,`STYLE_FOUR`, `STYLE_FIVE`, `STYLE_SIX`, `STYLE_SEVEN` |
 
 ---
 
