@@ -1,3 +1,3 @@
-import Title from "./Title";
+import ShimmerTitle from "./Title";
 
-export default Title;
+export default ShimmerTitle;

@@ -1,3 +1,3 @@
-import Table from "./Table";
+import ShimmerTable from "./Table";
 
-export default Table;
+export default ShimmerTable;

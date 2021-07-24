@@ -1,2 +1,2 @@
-import Separator from "./Separator";
-export default Separator;
+import ShimmerSeparator from "./Separator";
+export default ShimmerSeparator;

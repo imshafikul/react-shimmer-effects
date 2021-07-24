@@ -1,3 +1,3 @@
-import Card from "./Card";
+import ShimmerCard from "./Card";
 
-export default Card;
+export default ShimmerCard;

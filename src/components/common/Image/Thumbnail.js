@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-const Thumbnail = ({
+const ShimmerThumbnail = ({
   height,
   width,
   center,
@@ -34,7 +34,7 @@ const Thumbnail = ({
   );
 };
 
-Thumbnail.propTypes = {
+ShimmerThumbnail.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
   center: PropTypes.bool,
@@ -43,11 +43,11 @@ Thumbnail.propTypes = {
   rounded: PropTypes.bool,
 };
 
-Thumbnail.defaultProps = {
+ShimmerThumbnail.defaultProps = {
   canter: false,
   fitOnFrame: false,
   rounded: false,
   height: 250,
 };
 
-export default Thumbnail;
+export default ShimmerThumbnail;

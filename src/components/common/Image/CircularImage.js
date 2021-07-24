@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-const CircularImage = ({ size, center, className }) => {
+const ShimmerCircularImage = ({ size, center, className }) => {
   const style = {};
   if (size) {
     style.width = `${size}px`;
@@ -26,15 +26,15 @@ const CircularImage = ({ size, center, className }) => {
   );
 };
 
-CircularImage.propTypes = {
+ShimmerCircularImage.propTypes = {
   size: PropTypes.number,
   center: PropTypes.bool,
   className: PropTypes.string,
 };
 
-CircularImage.defaultProps = {
+ShimmerCircularImage.defaultProps = {
   center: false,
   size: 80,
 };
 
-export default CircularImage;
+export default ShimmerCircularImage;

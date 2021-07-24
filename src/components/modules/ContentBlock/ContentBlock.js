@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "../../common/Card";
-import { Thumbnail } from "../../common/Image";
-import Title from "../../common/Title";
-import Text from "../../common/Text";
-import Button from "../../common/Button";
+import ShimmerCard from "../../common/Card";
+import { ShimmerThumbnail } from "../../common/Image";
+import ShimmerTitle from "../../common/Title";
+import ShimmerText from "../../common/Text";
+import ShimmerButton from "../../common/Button";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-const ContentBlock = ({
+const ShimmerContentBlock = ({
   card,
   title,
   text,
@@ -30,16 +30,16 @@ const ContentBlock = ({
             "w-50": !thumbnailWidth,
           })}
         >
-          <Thumbnail
+          <ShimmerThumbnail
             width={thumbnailWidth}
             height={thumbnailHeight}
             className="h-100 m-0"
           />
         </div>
         <div className=" flex-1 p-30">
-          {title && <Title className="w-40" line={1} />}
-          {text && <Text />}
-          {cta && <Button />}
+          {title && <ShimmerTitle className="w-40" line={1} />}
+          {text && <ShimmerText />}
+          {cta && <ShimmerButton />}
         </div>
       </div>
     );
@@ -47,10 +47,10 @@ const ContentBlock = ({
 
   if (!card) return renderContent();
 
-  return <Card>{renderContent()}</Card>;
+  return <ShimmerCard>{renderContent()}</ShimmerCard>;
 };
 
-ContentBlock.propTypes = {
+ShimmerContentBlock.propTypes = {
   card: PropTypes.bool,
   title: PropTypes.bool,
   text: PropTypes.bool,
@@ -60,11 +60,11 @@ ContentBlock.propTypes = {
   reverse: PropTypes.bool,
 };
 
-ContentBlock.defaultProps = {
+ShimmerContentBlock.defaultProps = {
   card: true,
   title: false,
   text: false,
   cta: false,
   reverse: false,
 };
-export default ContentBlock;
+export default ShimmerContentBlock;

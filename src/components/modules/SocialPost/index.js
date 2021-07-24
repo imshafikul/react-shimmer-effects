@@ -1,3 +1,3 @@
-import SocialPost from "./SocialPost";
+import ShimmerSocialPost from "./SocialPost";
 
-export default SocialPost;
+export default ShimmerSocialPost;

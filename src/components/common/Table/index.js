@@ -1,5 +1,5 @@
-import TableCol from "./TableCol";
-import TableRow from "./TableRow";
+import ShimmerTableCol from "./TableCol";
+import ShimmerTableRow from "./TableRow";
 import "./table.scss";
 
-export { TableCol, TableRow };
+export { ShimmerTableCol, ShimmerTableRow };

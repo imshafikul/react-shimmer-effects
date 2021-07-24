@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CategoryItem from "./Item";
-import Card from "../../common/Card";
-import Title from "../../common/Title";
+import ShimmerCategoryItem from "./Item";
+import ShimmerCard from "../../common/Card";
+import ShimmerTitle from "../../common/Title";
 
-const CategoryList = ({ items, categoryStyle, title }) => {
+const ShimmerCategoryList = ({ items, categoryStyle, title }) => {
   const categories = {
-    STYLE_ONE: <CategoryItem />,
+    STYLE_ONE: <ShimmerCategoryItem />,
     STYLE_TWO: (
-      <CategoryItem
+      <ShimmerCategoryItem
         hasImage
         imageType="thumbnail"
         imageWidth={100}
@@ -17,7 +17,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
       />
     ),
     STYLE_THREE: (
-      <CategoryItem
+      <ShimmerCategoryItem
         hasImage
         imageType="circular"
         imageWidth={100}
@@ -26,7 +26,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
       />
     ),
     STYLE_FOUR: (
-      <CategoryItem
+      <ShimmerCategoryItem
         hasImage
         imageType="thumbnail"
         imageWidth={100}
@@ -35,7 +35,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
       />
     ),
     STYLE_FIVE: (
-      <CategoryItem
+      <ShimmerCategoryItem
         hasImage
         imageType="circular"
         imageWidth={100}
@@ -44,7 +44,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
       />
     ),
     STYLE_SIX: (
-      <CategoryItem
+      <ShimmerCategoryItem
         hasImage
         imageType="thumbnail"
         imageWidth={100}
@@ -54,7 +54,7 @@ const CategoryList = ({ items, categoryStyle, title }) => {
       />
     ),
     STYLE_SEVEN: (
-      <CategoryItem
+      <ShimmerCategoryItem
         hasImage
         imageType="circular"
         imageWidth={100}
@@ -73,14 +73,14 @@ const CategoryList = ({ items, categoryStyle, title }) => {
   };
 
   return (
-    <Card paddingSize={20}>
-      {title && <Title line={1} className="w-60" />}
+    <ShimmerCard paddingSize={20}>
+      {title && <ShimmerTitle line={1} className="w-60" />}
       {renderItems()}
-    </Card>
+    </ShimmerCard>
   );
 };
 
-CategoryList.propTypes = {
+ShimmerCategoryList.propTypes = {
   title: PropTypes.bool,
   items: PropTypes.number,
   categoryStyle: PropTypes.oneOf([
@@ -94,10 +94,10 @@ CategoryList.propTypes = {
   ]),
 };
 
-CategoryList.defaultProps = {
+ShimmerCategoryList.defaultProps = {
   title: false,
   items: 5,
   categoryStyle: "STYLE_ONE",
 };
 
-export default CategoryList;
+export default ShimmerCategoryList;

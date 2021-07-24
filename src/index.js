@@ -1,38 +1,51 @@
-import Button from "./components/common/Button";
-import { CircularImage, Thumbnail } from "./components/common/Image";
-import { SimpleGallery, FeaturedGallery } from "./components/modules/Gallery";
-import { TableCol, TableRow } from "./components/common/Table";
-import Table from "./components/modules/Table";
-import Card from "./components/common/Card";
-import Badge from "./components/common/Badge";
-import Text from "./components/common/Text";
-import Title from "./components/common/Title";
-import Separator from "./components/common/Separator";
-import SocialPost from "./components/modules/SocialPost";
-import { CategoryItem, CategoryList } from "./components/modules/Category";
-import { PostItem, PostDetails, PostList } from "./components/modules/Post";
-import ContentBlock from "./components/modules/ContentBlock";
+import ShimmerButton from "./components/common/Button";
+import {
+  ShimmerCircularImage,
+  ShimmerThumbnail,
+} from "./components/common/Image";
+import {
+  ShimmerSimpleGallery,
+  ShimmerFeaturedGallery,
+} from "./components/modules/Gallery";
+import { ShimmerTableCol, ShimmerTableRow } from "./components/common/Table";
+import ShimmerTable from "./components/modules/Table";
+import ShimmerCard from "./components/common/Card";
+import ShimmerBadge from "./components/common/Badge";
+import ShimmerText from "./components/common/Text";
+import ShimmerTitle from "./components/common/Title";
+import ShimmerSeparator from "./components/common/Separator";
+import ShimmerSocialPost from "./components/modules/SocialPost";
+import {
+  ShimmerCategoryItem,
+  ShimmerCategoryList,
+} from "./components/modules/Category";
+import {
+  ShimmerPostItem,
+  ShimmerPostDetails,
+  ShimmerPostList,
+} from "./components/modules/Post";
+import ShimmerContentBlock from "./components/modules/ContentBlock";
 import "./styles/styles.scss";
 
 export {
-  Button,
-  CircularImage,
-  Thumbnail,
-  Card,
-  SimpleGallery,
-  FeaturedGallery,
-  Table,
-  TableCol,
-  TableRow,
-  Badge,
-  Text,
-  Title,
-  SocialPost,
-  Separator,
-  CategoryItem,
-  CategoryList,
-  PostItem,
-  PostDetails,
-  PostList,
-  ContentBlock,
+  ShimmerButton,
+  ShimmerCircularImage,
+  ShimmerThumbnail,
+  ShimmerCard,
+  ShimmerSimpleGallery,
+  ShimmerFeaturedGallery,
+  ShimmerTable,
+  ShimmerTableCol,
+  ShimmerTableRow,
+  ShimmerBadge,
+  ShimmerText,
+  ShimmerTitle,
+  ShimmerSocialPost,
+  ShimmerSeparator,
+  ShimmerCategoryItem,
+  ShimmerCategoryList,
+  ShimmerPostItem,
+  ShimmerPostDetails,
+  ShimmerPostList,
+  ShimmerContentBlock,
 };

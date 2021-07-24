@@ -1,5 +1,9 @@
 import React from "react";
-import { SimpleGallery, FeaturedGallery, Separator } from "shimmer-react";
+import {
+  ShimmerSimpleGallery,
+  ShimmerFeaturedGallery,
+  ShimmerSeparator,
+} from "shimmer-react";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 
@@ -13,7 +17,7 @@ const GalleryDemo = () => (
         code={code.CIRCULAR_IMAGE_GALLERY_WITH_CAPTION}
       />
     </div>
-    <SimpleGallery imageType="circular" imageHeight={200} caption />
+    <ShimmerSimpleGallery imageType="circular" imageHeight={200} caption />
     <div className="d-flex justify-content-between">
       Thumbnail Image Gallery{" "}
       <CodePreview
@@ -21,7 +25,7 @@ const GalleryDemo = () => (
         code={code.THUMBNAIL_IMAGE_GALLERY}
       />
     </div>
-    <SimpleGallery card imageHeight={300} />
+    <ShimmerSimpleGallery card imageHeight={300} />
     <br />
     <div className="d-flex justify-content-between">
       Thumbnail Image Gallery with Caption{" "}
@@ -30,7 +34,7 @@ const GalleryDemo = () => (
         code={code.THUMBNAIL_IMAGE_GALLERY_WITH_CAPTION}
       />
     </div>
-    <SimpleGallery card imageHeight={300} caption />
+    <ShimmerSimpleGallery card imageHeight={300} caption />
     <br />
     <div className="d-flex justify-content-between">
       Featured Gallery{" "}
@@ -39,8 +43,8 @@ const GalleryDemo = () => (
         code={code.FEATURED_GALLERY}
       />
     </div>
-    <FeaturedGallery row={2} col={2} card frameHeight={600} />
-    <Separator />
+    <ShimmerFeaturedGallery row={2} col={2} card frameHeight={600} />
+    <ShimmerSeparator />
   </div>
 );
 

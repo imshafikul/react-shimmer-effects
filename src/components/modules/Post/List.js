@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import PostItem from "./Item";
+import ShimmerPostItem from "./Item";
 
-const PostList = ({ row, col, gap, className, postStyle }) => {
+const ShimmerPostList = ({ row, col, gap, className, postStyle }) => {
   const posts = {
-    STYLE_ONE: <PostItem title text cta />,
-    STYLE_TWO: <PostItem title cta />,
-    STYLE_THREE: <PostItem title />,
-    STYLE_FOUR: <PostItem text cta />,
-    STYLE_FIVE: <PostItem text />,
+    STYLE_ONE: <ShimmerPostItem title text cta />,
+    STYLE_TWO: <ShimmerPostItem title cta />,
+    STYLE_THREE: <ShimmerPostItem title />,
+    STYLE_FOUR: <ShimmerPostItem text cta />,
+    STYLE_FIVE: <ShimmerPostItem text />,
     STYLE_SIX: (
-      <PostItem
+      <ShimmerPostItem
         title
         text
         cta
@@ -22,7 +22,7 @@ const PostList = ({ row, col, gap, className, postStyle }) => {
       />
     ),
     STYLE_SEVEN: (
-      <PostItem
+      <ShimmerPostItem
         text
         cta
         imageType="thumbnail"
@@ -32,7 +32,7 @@ const PostList = ({ row, col, gap, className, postStyle }) => {
       />
     ),
     STYLE_EIGHT: (
-      <PostItem
+      <ShimmerPostItem
         title
         cta
         imageType="thumbnail"
@@ -66,7 +66,7 @@ const PostList = ({ row, col, gap, className, postStyle }) => {
   );
 };
 
-PostList.propTypes = {
+ShimmerPostList.propTypes = {
   row: PropTypes.number,
   col: PropTypes.oneOf([2, 3, 4]),
   gap: PropTypes.oneOf([20, 30]),
@@ -82,11 +82,11 @@ PostList.propTypes = {
   ]),
 };
 
-PostList.defaultProps = {
+ShimmerPostList.defaultProps = {
   row: 3,
   col: 3,
   gap: 20,
   postStyle: "STYLE_ONE",
 };
 
-export default PostList;
+export default ShimmerPostList;

@@ -1,4 +1,4 @@
-import CategoryItem from "./Item";
-import CategoryList from "./List";
+import ShimmerCategoryItem from "./Item";
+import ShimmerCategoryList from "./List";
 
-export { CategoryItem, CategoryList };
+export { ShimmerCategoryItem, ShimmerCategoryList };

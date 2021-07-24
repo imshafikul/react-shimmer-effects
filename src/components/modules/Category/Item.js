@@ -1,12 +1,12 @@
 import React from "react";
-import { CircularImage, Thumbnail } from "../../common/Image";
-import Text from "../../common/Text";
+import { ShimmerCircularImage, ShimmerThumbnail } from "../../common/Image";
+import ShimmerText from "../../common/Text";
 import Title from "../../common/Title";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Button from "../../common/Button";
 
-const CategoryItem = ({
+const ShimmerCategoryItem = ({
   hasImage,
   imageType,
   imageWidth,
@@ -22,7 +22,7 @@ const CategoryItem = ({
         <div>
           <Title variant="secondary" line={1} className="mb-15 w-80" />
           <div className="w-40">
-            <Text line={3} gap={10} />
+            <ShimmerText line={3} gap={10} />
           </div>
         </div>
       ) : (
@@ -33,14 +33,16 @@ const CategoryItem = ({
           })}
         >
           {imageType === "thumbnail" && (
-            <Thumbnail width={imageWidth} height={imageHeight} />
+            <ShimmerThumbnail width={imageWidth} height={imageHeight} />
           )}
 
-          {imageType === "circular" && <CircularImage size={imageWidth} />}
+          {imageType === "circular" && (
+            <ShimmerCircularImage size={imageWidth} />
+          )}
 
           <div className="flex-1 p-15">
             {title && <Title variant="secondary" />}
-            {text && <Text line={3} gap={10} className="mb-20" />}
+            {text && <ShimmerText line={3} gap={10} className="mb-20" />}
             {cta && <Button size="sm" />}
           </div>
         </div>
@@ -49,7 +51,7 @@ const CategoryItem = ({
   );
 };
 
-CategoryItem.propTypes = {
+ShimmerCategoryItem.propTypes = {
   hasImage: PropTypes.bool.isRequired,
   imageType: PropTypes.oneOf(["circular", "thumbnail"]),
   imageWidth: PropTypes.number,
@@ -60,7 +62,7 @@ CategoryItem.propTypes = {
   contentCenter: PropTypes.bool,
 };
 
-CategoryItem.defaultProps = {
+ShimmerCategoryItem.defaultProps = {
   hasImage: false,
   imageType: "thumbnail",
   title: false,
@@ -68,4 +70,4 @@ CategoryItem.defaultProps = {
   contentCenter: false,
 };
 
-export default CategoryItem;
+export default ShimmerCategoryItem;

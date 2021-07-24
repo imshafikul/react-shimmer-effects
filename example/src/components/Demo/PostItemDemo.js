@@ -1,5 +1,5 @@
 import React from "react";
-import { Separator, PostItem } from "shimmer-react";
+import { ShimmerSeparator, ShimmerPostItem } from "shimmer-react";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 
@@ -10,13 +10,13 @@ const PostItemDemo = () => (
     </h3>
     <div className="shimmer-row">
       <div className="shimmer-col">
-        <PostItem card title text cta />
+        <ShimmerPostItem card title text cta />
       </div>
       <div className="shimmer-col">
-        <PostItem card title cta />
+        <ShimmerPostItem card title cta />
       </div>
       <div className="shimmer-col">
-        <PostItem
+        <ShimmerPostItem
           card
           title
           cta
@@ -27,7 +27,7 @@ const PostItemDemo = () => (
         />
       </div>
     </div>
-    <Separator />
+    <ShimmerSeparator />
   </div>
 );
 

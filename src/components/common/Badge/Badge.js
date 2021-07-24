@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./badge.scss";
 
-const Badge = ({ width }) => {
+const ShimmerBadge = ({ width }) => {
   const style = {};
   if (width) style.width = `${width}px`;
 
   return <div className="shimmer shimmer-badge" style={style} />;
 };
 
-Badge.propTypes = {
+ShimmerBadge.propTypes = {
   width: PropTypes.number,
 };
 
-export default Badge;
+export default ShimmerBadge;

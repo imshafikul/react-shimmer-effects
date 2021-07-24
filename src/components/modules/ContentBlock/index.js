@@ -1,3 +1,3 @@
-import ContentBlock from "./ContentBlock";
+import ShimmerContentBlock from "./ContentBlock";
 
-export default ContentBlock;
+export default ShimmerContentBlock;

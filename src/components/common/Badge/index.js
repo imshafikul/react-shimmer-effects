@@ -1,3 +1,3 @@
-import Badge from "./Badge";
+import ShimmerBadge from "./Badge";
 
-export default Badge;
+export default ShimmerBadge;

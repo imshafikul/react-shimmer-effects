@@ -1,12 +1,12 @@
 import React from "react";
 import {
-  Button,
-  CircularImage,
-  Thumbnail,
-  Badge,
-  Text,
-  Title,
-  Separator,
+  ShimmerButton,
+  ShimmerCircularImage,
+  ShimmerThumbnail,
+  ShimmerBadge,
+  ShimmerText,
+  ShimmerTitle,
+  ShimmerSeparator,
 } from "shimmer-react";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
@@ -16,16 +16,16 @@ const ElementsDemo = () => (
     <h3 className="d-flex justify-content-between">
       Elements <CodePreview title="Elements" code={code.ELEMENTS} />
     </h3>
-    <Button size="sm" />
-    <Button size="md" />
-    <Button size="lg" />
-    <Badge width={200} />
-    <Title />
-    <Title line={3} variant="secondary" />
-    <Text />
-    <CircularImage size={300} />
-    <Thumbnail height={300} width={500} className="m-0" rounded />
-    <Separator />
+    <ShimmerButton size="sm" />
+    <ShimmerButton size="md" />
+    <ShimmerButton size="lg" />
+    <ShimmerBadge width={200} />
+    <ShimmerTitle />
+    <ShimmerTitle line={3} variant="secondary" />
+    <ShimmerText />
+    <ShimmerCircularImage size={300} />
+    <ShimmerThumbnail height={300} width={500} className="m-0" rounded />
+    <ShimmerSeparator />
   </div>
 );
 

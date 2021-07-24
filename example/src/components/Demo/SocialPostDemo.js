@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialPost, Separator } from "shimmer-react";
+import { ShimmerSocialPost, ShimmerSeparator } from "shimmer-react";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 
@@ -10,15 +10,15 @@ const SocialPostDemo = () => (
     </h3>
     <div className="shimmer-row">
       <div className="shimmer-col">
-        <SocialPost type="image" />
-        <SocialPost type="both" />
+        <ShimmerSocialPost type="image" />
+        <ShimmerSocialPost type="both" />
       </div>
       <div className="shimmer-col">
-        <SocialPost type="text" />
-        <SocialPost type="text" title />
+        <ShimmerSocialPost type="text" />
+        <ShimmerSocialPost type="text" title />
       </div>
     </div>
-    <Separator />
+    <ShimmerSeparator />
   </div>
 );
 

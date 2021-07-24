@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./card.scss";
 
-const Card = ({ children, className, paddingSize }) => {
+const ShimmerCard = ({ children, className, paddingSize }) => {
   if (!children) return null;
   return (
     <div
@@ -18,13 +18,13 @@ const Card = ({ children, className, paddingSize }) => {
   );
 };
 
-Card.propTypes = {
+ShimmerCard.propTypes = {
   className: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array])
     .isRequired,
   paddingSize: PropTypes.oneOf([false, 20, 30]),
 };
 
-Card.defaultProps = { paddingSize: false };
+ShimmerCard.defaultProps = { paddingSize: false };
 
-export default Card;
+export default ShimmerCard;

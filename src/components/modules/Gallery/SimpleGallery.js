@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Thumbnail, CircularImage } from "../../common/Image";
-import Title from "../../common/Title";
-import Card from "../../common/Card";
+import { ShimmerThumbnail, ShimmerCircularImage } from "../../common/Image";
+import ShimmerTitle from "../../common/Title";
+import ShimmerCard from "../../common/Card";
 
-const SimpleGallery = ({
+const ShimmerSimpleGallery = ({
   row,
   col,
   gap,
@@ -24,7 +24,7 @@ const SimpleGallery = ({
       photos.push(
         <div key={index}>
           {imageType === "thumbnail" && (
-            <Thumbnail
+            <ShimmerThumbnail
               key={index}
               fitOnFrame={fitOnFrame}
               height={imageHeight}
@@ -35,10 +35,10 @@ const SimpleGallery = ({
           )}
 
           {imageType === "circular" && (
-            <CircularImage size={imageHeight} center />
+            <ShimmerCircularImage size={imageHeight} center />
           )}
           {caption && (
-            <Title
+            <ShimmerTitle
               variant="secondary"
               className={classNames({
                 "mt-15": imageType === "thumbnail",
@@ -69,7 +69,7 @@ const SimpleGallery = ({
     );
 
   return (
-    <Card paddingSize={20}>
+    <ShimmerCard paddingSize={20}>
       <div
         className={classNames({
           grid: true,
@@ -80,11 +80,11 @@ const SimpleGallery = ({
       >
         {renderPhotos()}
       </div>
-    </Card>
+    </ShimmerCard>
   );
 };
 
-SimpleGallery.propTypes = {
+ShimmerSimpleGallery.propTypes = {
   row: PropTypes.number,
   col: PropTypes.oneOf([2, 3, 4]),
   gap: PropTypes.oneOf([20, 30]),
@@ -95,7 +95,7 @@ SimpleGallery.propTypes = {
   card: PropTypes.bool,
 };
 
-SimpleGallery.defaultProps = {
+ShimmerSimpleGallery.defaultProps = {
   row: 3,
   col: 3,
   gap: 20,
@@ -105,4 +105,4 @@ SimpleGallery.defaultProps = {
   card: false,
 };
 
-export default SimpleGallery;
+export default ShimmerSimpleGallery;

@@ -22,11 +22,11 @@ yarn add shimmer-react
 
 ```jsx
 import React from "react";
-import { Button } from "shimmer-react";
+import { ShimmerButton } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Button size="md" />;
+    return <ShimmerButton size="md" />;
   }
 }
 ```
@@ -43,11 +43,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { Badge } from "shimmer-react";
+import { ShimmerBadge } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Badge width={120} />;
+    return <ShimmerBadge width={120} />;
   }
 }
 ```
@@ -64,11 +64,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { Title } from "shimmer-react";
+import { ShimmerTitle } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Title line={2} gap={10} variant="primary" />;
+    return <ShimmerTitle line={2} gap={10} variant="primary" />;
   }
 }
 ```
@@ -88,11 +88,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { Text } from "shimmer-react";
+import { ShimmerText } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Text line={5} gap={10} />;
+    return <ShimmerText line={5} gap={10} />;
   }
 }
 ```
@@ -111,11 +111,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { CircularImage } from "shimmer-react";
+import { ShimmerCircularImage } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <CircularImage size={150} />;
+    return <ShimmerCircularImage size={150} />;
   }
 }
 ```
@@ -134,11 +134,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { Thumbnail } from "shimmer-react";
+import { ShimmerThumbnail } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Thumbnail height={250} rounded />;
+    return <ShimmerThumbnail height={250} rounded />;
   }
 }
 ```
@@ -162,15 +162,15 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { SimpleGallery } from "shimmer-react";
+import { ShimmerSimpleGallery } from "shimmer-react";
 
 class Example extends Component {
   render() {
     return (
       <>
-        <SimpleGallery imageType="circular" imageHeight={200} caption />
-        <SimpleGallery card imageHeight={300} />
-        <SimpleGallery card imageHeight={300} caption />
+        <ShimmerSimpleGallery imageType="circular" imageHeight={200} caption />
+        <ShimmerSimpleGallery card imageHeight={300} />
+        <ShimmerSimpleGallery card imageHeight={300} caption />
       </>
     );
   }
@@ -196,11 +196,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { FeaturedGallery } from "shimmer-react";
+import { ShimmerFeaturedGallery } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <FeaturedGallery row={2} col={2} card frameHeight={600} />;
+    return <ShimmerFeaturedGallery row={2} col={2} card frameHeight={600} />;
   }
 }
 ```
@@ -221,11 +221,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { Table } from "shimmer-react";
+import { ShimmerTable } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <Table row={5} col={5} />;
+    return <ShimmerTable row={5} col={5} />;
   }
 }
 ```
@@ -243,12 +243,18 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ContentBlock } from "shimmer-react";
+import { ShimmerContentBlock } from "shimmer-react";
 
 class Example extends Component {
   render() {
     return (
-      <ContentBlock title text cta thumbnailWidth={370} thumbnailHeight={370} />
+      <ShimmerContentBlock
+        title
+        text
+        cta
+        thumbnailWidth={370}
+        thumbnailHeight={370}
+      />
     );
   }
 }
@@ -274,15 +280,15 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { CategoryItem } from "shimmer-react";
+import { ShimmerCategoryItem } from "shimmer-react";
 
 class Example extends Component {
   render() {
     return (
       <>
-        <CategoryItem />
+        <ShimmerCategoryItem />
 
-        <CategoryItem
+        <ShimmerCategoryItem
           hasImage
           imageType="thumbnail"
           imageWidth={100}
@@ -290,7 +296,7 @@ class Example extends Component {
           title
         />
 
-        <CategoryItem
+        <ShimmerCategoryItem
           hasImage
           imageType="circular"
           imageWidth={100}
@@ -298,7 +304,7 @@ class Example extends Component {
           title
         />
 
-        <CategoryItem
+        <ShimmerCategoryItem
           hasImage
           imageType="thumbnail"
           imageWidth={100}
@@ -306,7 +312,7 @@ class Example extends Component {
           text
         />
 
-        <CategoryItem
+        <ShimmerCategoryItem
           hasImage
           imageType="circular"
           imageWidth={100}
@@ -314,7 +320,7 @@ class Example extends Component {
           text
         />
 
-        <CategoryItem
+        <ShimmerCategoryItem
           hasImage
           imageType="thumbnail"
           imageWidth={100}
@@ -323,7 +329,7 @@ class Example extends Component {
           cta
         />
 
-        <CategoryItem
+        <ShimmerCategoryItem
           hasImage
           imageType="circular"
           imageWidth={100}
@@ -356,11 +362,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { CategoryList } from "shimmer-react";
+import { ShimmerCategoryList } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />;
+    return <ShimmerCategoryList title items={6} categoryStyle="STYLE_SEVEN" />;
   }
 }
 ```
@@ -381,16 +387,16 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { SocialPost } from "shimmer-react";
+import { ShimmerSocialPost } from "shimmer-react";
 
 class Example extends Component {
   render() {
     return (
       <>
-        <SocialPost type="image" />
-        <SocialPost type="both" />
-        <SocialPost type="text" />
-        <SocialPost type="text" title />
+        <ShimmerSocialPost type="image" />
+        <ShimmerSocialPost type="both" />
+        <ShimmerSocialPost type="text" />
+        <ShimmerSocialPost type="text" title />
       </>
     );
   }
@@ -410,15 +416,15 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { PostItem } from "shimmer-react";
+import { ShimmerPostItem } from "shimmer-react";
 
 class Example extends Component {
   render() {
     return (
       <>
-        <PostItem card title text cta />
-        <PostItem card title cta />
-        <PostItem
+        <ShimmerPostItem card title text cta />
+        <ShimmerPostItem card title cta />
+        <ShimmerPostItem
           card
           title
           cta
@@ -450,11 +456,11 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { PostList } from "shimmer-react";
+import { ShimmerPostList } from "shimmer-react";
 
 class Example extends Component {
   render() {
-    return <PostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />;
+    return <ShimmerPostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />;
   }
 }
 ```
@@ -474,14 +480,14 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { PostDetails } from "shimmer-react";
+import { ShimmerPostDetails } from "shimmer-react";
 
 class Example extends Component {
   render() {
     return (
       <>
-        <PostDetails card cta variant="SIMPLE" />
-        <PostDetails card cta variant="EDITOR" />
+        <ShimmerPostDetails card cta variant="SIMPLE" />
+        <ShimmerPostDetails card cta variant="EDITOR" />
       </>
     );
   }
@@ -496,11 +502,9 @@ class Example extends Component {
 | `card`    | bool   | no       | false         | Card Style enable/disable             |
 | `cta`     | bool   | no       | false         | Call to Action                        |
 
-
 ## Contribute
 
 Feel free to send PR and any suggestions. Thanks
-
 
 ## License
 

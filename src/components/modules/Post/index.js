@@ -1,5 +1,5 @@
-import PostDetails from "./Details";
-import PostItem from "./Item";
-import PostList from "./List";
+import ShimmerPostDetails from "./Details";
+import ShimmerPostItem from "./Item";
+import ShimmerPostList from "./List";
 
-export { PostDetails, PostItem, PostList };
+export { ShimmerPostDetails, ShimmerPostItem, ShimmerPostList };

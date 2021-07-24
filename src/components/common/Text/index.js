@@ -1,3 +1,3 @@
-import Text from "./Text";
+import ShimmerText from "./Text";
 
-export default Text;
+export default ShimmerText;

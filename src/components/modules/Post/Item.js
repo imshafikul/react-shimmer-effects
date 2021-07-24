@@ -1,16 +1,23 @@
 import React from "react";
-import Card from "../../common/Card";
-import { Thumbnail, CircularImage } from "../../common/Image";
-import Title from "../../common/Title";
-import Text from "../../common/Text";
-import Button from "../../common/Button";
+import ShimmerCard from "../../common/Card";
+import { ShimmerThumbnail, ShimmerCircularImage } from "../../common/Image";
+import ShimmerTitle from "../../common/Title";
+import ShimmerText from "../../common/Text";
+import ShimmerButton from "../../common/Button";
 import PropTypes from "prop-types";
 
-const PostItem = ({ cta, title, text, imageType, imageWidth, imageHeight }) => {
+const ShimmerPostItem = ({
+  cta,
+  title,
+  text,
+  imageType,
+  imageWidth,
+  imageHeight,
+}) => {
   return (
-    <Card>
+    <ShimmerCard>
       {imageType === "thumbnail" && (
-        <Thumbnail
+        <ShimmerThumbnail
           height={imageHeight}
           width={imageWidth}
           className={
@@ -19,18 +26,18 @@ const PostItem = ({ cta, title, text, imageType, imageWidth, imageHeight }) => {
         />
       )}
       {imageType === "circular" && (
-        <CircularImage size={imageWidth} className="m-30 mb-0" />
+        <ShimmerCircularImage size={imageWidth} className="m-30 mb-0" />
       )}
       <div className="p-30">
-        {title && <Title variant="secondary" />}
-        {text && <Text line={3} gap={10} />}
-        {cta && <Button size="sm" />}
+        {title && <ShimmerTitle variant="secondary" />}
+        {text && <ShimmerText line={3} gap={10} />}
+        {cta && <ShimmerButton size="sm" />}
       </div>
-    </Card>
+    </ShimmerCard>
   );
 };
 
-PostItem.propTypes = {
+ShimmerPostItem.propTypes = {
   title: PropTypes.bool,
   text: PropTypes.bool,
   cta: PropTypes.bool,
@@ -39,10 +46,10 @@ PostItem.propTypes = {
   imageWidth: PropTypes.number,
 };
 
-PostItem.defaultProps = {
+ShimmerPostItem.defaultProps = {
   title: false,
   text: false,
   cta: false,
   imageType: "thumbnail",
 };
-export default PostItem;
+export default ShimmerPostItem;

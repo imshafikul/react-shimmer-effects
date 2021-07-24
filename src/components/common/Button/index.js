@@ -1,3 +1,3 @@
-import Button from "./Button";
+import ShimmerButton from "./Button";
 
-export default Button;
+export default ShimmerButton;

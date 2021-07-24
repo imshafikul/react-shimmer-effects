@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./button.scss";
 
-const Button = ({ size }) => (
+const ShimmerButton = ({ size }) => (
   <div
     className={classNames({
       "shimmer shimmer-button": true,
@@ -12,12 +12,12 @@ const Button = ({ size }) => (
   />
 );
 
-Button.propTypes = {
+ShimmerButton.propTypes = {
   size: PropTypes.oneOf(["lg", "md", "sm"]),
 };
 
-Button.defaultProps = {
+ShimmerButton.defaultProps = {
   size: "md",
 };
 
-export default Button;
+export default ShimmerButton;

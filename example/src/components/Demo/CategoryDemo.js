@@ -1,5 +1,10 @@
 import React from "react";
-import { Card, Separator, CategoryItem, CategoryList } from "shimmer-react";
+import {
+  ShimmerCard,
+  ShimmerSeparator,
+  ShimmerCategoryItem,
+  ShimmerCategoryList,
+} from "shimmer-react";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 
@@ -12,10 +17,10 @@ const CategoryDemo = () => (
           Category Items{" "}
           <CodePreview title="Category Items" code={code.CATEGORY_ITEMS} />
         </div>
-        <Card paddingSize={30}>
-          <CategoryItem />
+        <ShimmerCard paddingSize={30}>
+          <ShimmerCategoryItem />
 
-          <CategoryItem
+          <ShimmerCategoryItem
             hasImage
             imageType="thumbnail"
             imageWidth={100}
@@ -23,7 +28,7 @@ const CategoryDemo = () => (
             title
           />
 
-          <CategoryItem
+          <ShimmerCategoryItem
             hasImage
             imageType="circular"
             imageWidth={100}
@@ -31,7 +36,7 @@ const CategoryDemo = () => (
             title
           />
 
-          <CategoryItem
+          <ShimmerCategoryItem
             hasImage
             imageType="thumbnail"
             imageWidth={100}
@@ -39,7 +44,7 @@ const CategoryDemo = () => (
             text
           />
 
-          <CategoryItem
+          <ShimmerCategoryItem
             hasImage
             imageType="circular"
             imageWidth={100}
@@ -47,7 +52,7 @@ const CategoryDemo = () => (
             text
           />
 
-          <CategoryItem
+          <ShimmerCategoryItem
             hasImage
             imageType="thumbnail"
             imageWidth={100}
@@ -56,7 +61,7 @@ const CategoryDemo = () => (
             cta
           />
 
-          <CategoryItem
+          <ShimmerCategoryItem
             hasImage
             imageType="circular"
             imageWidth={100}
@@ -64,17 +69,17 @@ const CategoryDemo = () => (
             text
             cta
           />
-        </Card>
+        </ShimmerCard>
       </div>
       <div className="shimmer-col">
         <div className="d-flex justify-content-between">
           Category List{" "}
           <CodePreview title="Category List" code={code.CATEGORY_LISTS} />
         </div>
-        <CategoryList title items={6} categoryStyle="STYLE_SEVEN" />
+        <ShimmerCategoryList title items={6} categoryStyle="STYLE_SEVEN" />
       </div>
     </div>
-    <Separator />
+    <ShimmerSeparator />
   </div>
 );
 
