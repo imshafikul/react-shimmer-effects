@@ -156,6 +156,34 @@ class Example extends Component {
 
 ---
 
+## Section Header
+
+```jsx
+import React from "react";
+import { ShimmerSectionHeader } from "shimmer-react";
+
+class Example extends Component {
+  render() {
+    return (
+      <div>
+        <ShimmerSectionHeader />
+        <ShimmerSectionHeader center />
+      </div>
+    );
+  }
+}
+```
+
+#### Properties
+
+| Property   | Type | Required | Default value | Description              |
+| :--------- | :--- | :------- | :------------ | :----------------------- |
+| `title`    | bool | no       | true          | Section Header title     |
+| `subTitle` | bool | no       | true          | Section Header subTitle  |
+| `center`   | bool | no       | true          | Content center alignment |
+
+---
+
 ## Gallery
 
 ### Simple Gallery

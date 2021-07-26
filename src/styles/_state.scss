@@ -92,16 +92,20 @@ Content Size Styles
   width: 30%;
 }
 
-.w-50 {
-  width: 50%;
-}
-
 .w-40 {
   width: 40%;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .w-60 {
   width: 60%;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .w-80 {
@@ -115,6 +119,10 @@ Flex Styles
 */
 .flex {
   display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
 .flex-horizontal-center {

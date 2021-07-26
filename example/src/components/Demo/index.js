@@ -9,12 +9,14 @@ import PostItemDemo from "./PostItemDemo";
 import PostListDemo from "./PostListDemo";
 import SocialPostDemo from "./SocialPostDemo";
 import TableDemo from "./TableDemo";
+import SectionDemo from "./SectionDemo";
 
 const Demo = () => {
   return (
     <Container fluid="sm">
       <h1 className="text-center app-title">Shimmer React Demo</h1>
       <ElementsDemo />
+      <SectionDemo />
       <GalleryDemo />
       <TableDemo />
       <SocialPostDemo />

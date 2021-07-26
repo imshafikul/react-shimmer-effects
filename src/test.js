@@ -20,6 +20,7 @@ import {
   ShimmerSimpleGallery,
   ShimmerFeaturedGallery,
   ShimmerSeparator,
+  ShimmerSectionHeader,
 } from ".";
 
 describe("Shimmer Button", () => {
@@ -143,5 +144,11 @@ describe("Shimmer Featured Gallery", () => {
 describe("Shimmer Separator", () => {
   it("is truthy", () => {
     expect(<ShimmerSeparator />).toBeTruthy();
+  });
+});
+
+describe("Shimmer Section Header", () => {
+  it("is truthy", () => {
+    expect(<ShimmerSectionHeader />).toBeTruthy();
   });
 });

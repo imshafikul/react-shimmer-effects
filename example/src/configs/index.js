@@ -199,6 +199,18 @@ const YourComponent = () => {
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
+  SECTION_HEADER: `import { ShimmerSectionHeader } from "shimmer-react";
+
+const YourComponent = () => {
+  return (
+    <div>
+      <ShimmerSectionHeader />
+      <ShimmerSectionHeader center/>
+    </div>
+  );
+};
+
+ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
 };
 
 export { code };

@@ -25,6 +25,7 @@ import {
   ShimmerPostList,
 } from "./components/modules/Post";
 import ShimmerContentBlock from "./components/modules/ContentBlock";
+import { ShimmerSectionHeader } from "./components/modules/Section";
 import "./styles/styles.scss";
 
 export {
@@ -48,4 +49,5 @@ export {
   ShimmerPostDetails,
   ShimmerPostList,
   ShimmerContentBlock,
+  ShimmerSectionHeader,
 };
