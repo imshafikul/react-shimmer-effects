@@ -31,6 +31,8 @@ class Example extends Component {
 }
 ```
 
+![buttons](https://user-images.githubusercontent.com/10860624/127364802-e4a40e8e-088e-4441-b862-478f391059b2.png)
+
 #### Properties
 
 | Property | Type   | Required | Default value | Description                                |
@@ -73,6 +75,8 @@ class Example extends Component {
 }
 ```
 
+![title](https://user-images.githubusercontent.com/10860624/127364175-a003bb4e-0673-48f2-beab-88e39a66037a.png)
+
 #### Properties
 
 | Property    | Type   | Required | Default value | Description                                                   |
@@ -97,6 +101,8 @@ class Example extends Component {
 }
 ```
 
+![text](https://user-images.githubusercontent.com/10860624/127363639-92ab42b4-57b1-4736-88a3-427861295472.png)
+
 #### Properties
 
 | Property    | Type   | Required | Default value | Description                                                   |
@@ -120,6 +126,8 @@ class Example extends Component {
 }
 ```
 
+![circular-image](https://user-images.githubusercontent.com/10860624/127363150-a2d92550-f894-46f0-b3c4-af54fc7462e6.png)
+
 #### Properties
 
 | Property    | Type   | Required | Default value | Description             |
@@ -142,6 +150,8 @@ class Example extends Component {
   }
 }
 ```
+
+![thumbnail](https://user-images.githubusercontent.com/10860624/127362805-179d7477-746f-4780-8203-e268a11a47e6.png)
 
 #### Properties
 
@@ -174,6 +184,8 @@ class Example extends Component {
 }
 ```
 
+![header](https://user-images.githubusercontent.com/10860624/127362065-86ad8559-c9c2-4400-bf15-364ef64e00a3.png)
+
 #### Properties
 
 | Property   | Type | Required | Default value | Description              |
@@ -205,6 +217,8 @@ class Example extends Component {
 }
 ```
 
+![simple-gallery](https://user-images.githubusercontent.com/10860624/127361840-713d6664-24e8-4e59-bdd1-85794850a755.png)
+
 #### Properties
 
 | Property      | Type   | Required | Default value | Description                                                  |
@@ -233,6 +247,8 @@ class Example extends Component {
 }
 ```
 
+![featured-gallery](https://user-images.githubusercontent.com/10860624/127354887-dc475dc1-a010-48e8-bce8-be01b875d11b.png)
+
 #### Properties
 
 | Property      | Type   | Required | Default value | Description                                                  |
@@ -257,6 +273,8 @@ class Example extends Component {
   }
 }
 ```
+
+![table](https://user-images.githubusercontent.com/10860624/127355289-2256a15d-02cf-4ffc-8e1e-2355a62ac285.png)
 
 #### Properties
 
@@ -287,6 +305,8 @@ class Example extends Component {
   }
 }
 ```
+
+![content-block](https://user-images.githubusercontent.com/10860624/127356033-d3dabf6d-6fd8-438c-a9d5-b4748371c597.png)
 
 #### Properties
 
@@ -371,6 +391,8 @@ class Example extends Component {
 }
 ```
 
+![category-items](https://user-images.githubusercontent.com/10860624/127358643-b22c9dfc-4131-4e17-a2b9-c95da64711e7.png)
+
 #### Properties
 
 | Property        | Type   | Required | Default value | Description                                            |
@@ -398,6 +420,8 @@ class Example extends Component {
   }
 }
 ```
+
+![category-list](https://user-images.githubusercontent.com/10860624/127358194-460dfd64-6ada-4fe2-8b6f-4801f0344bd7.png)
 
 #### Properties
 
@@ -430,6 +454,8 @@ class Example extends Component {
   }
 }
 ```
+
+![social-posts](https://user-images.githubusercontent.com/10860624/127359155-9d78a041-c149-4980-a1cd-73c0660848b0.png)
 
 #### Properties
 
@@ -467,6 +493,8 @@ class Example extends Component {
 }
 ```
 
+![post-items](https://user-images.githubusercontent.com/10860624/127360020-44d3612e-4458-49e3-95e2-84d3eb77196c.png)
+
 #### Properties
 
 | Property      | Type   | Required | Default value | Description                                            |
@@ -492,6 +520,8 @@ class Example extends Component {
   }
 }
 ```
+
+![post-list](https://user-images.githubusercontent.com/10860624/127360456-7d3646d0-5490-438d-bcda-a83f105e34b5.png)
 
 #### Properties
 
@@ -521,6 +551,8 @@ class Example extends Component {
   }
 }
 ```
+
+![post-details](https://user-images.githubusercontent.com/10860624/127361010-171fbe05-1260-427e-8910-c5f1cf56d749.png)
 
 #### Properties
 
