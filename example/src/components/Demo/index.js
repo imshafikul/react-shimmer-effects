@@ -14,7 +14,8 @@ import SectionDemo from "./SectionDemo";
 const Demo = () => {
   return (
     <Container fluid="sm">
-      <h1 className="text-center app-title">Shimmer React Demo</h1>
+      <h1 className="text-center app-title">React Shimmer Effects</h1>
+      <br />
       <ElementsDemo />
       <SectionDemo />
       <GalleryDemo />

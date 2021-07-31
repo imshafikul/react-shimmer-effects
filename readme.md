@@ -31,7 +31,7 @@ class Example extends Component {
 }
 ```
 
-![buttons](https://user-images.githubusercontent.com/10860624/127364802-e4a40e8e-088e-4441-b862-478f391059b2.png)
+![buttons](https://user-images.githubusercontent.com/10860624/127743787-fec60445-4315-4626-a3e8-caa6d5a958f0.png)
 
 #### Properties
 
@@ -75,7 +75,7 @@ class Example extends Component {
 }
 ```
 
-![title](https://user-images.githubusercontent.com/10860624/127364175-a003bb4e-0673-48f2-beab-88e39a66037a.png)
+![title](https://user-images.githubusercontent.com/10860624/127743804-ebf9a9fd-83e0-4821-81ff-570f11350c28.png)
 
 #### Properties
 
@@ -101,7 +101,7 @@ class Example extends Component {
 }
 ```
 
-![text](https://user-images.githubusercontent.com/10860624/127363639-92ab42b4-57b1-4736-88a3-427861295472.png)
+![text](https://user-images.githubusercontent.com/10860624/127743813-97bcc851-bd43-4bb4-a08d-58403906b068.png)
 
 #### Properties
 
@@ -184,7 +184,7 @@ class Example extends Component {
 }
 ```
 
-![header](https://user-images.githubusercontent.com/10860624/127362065-86ad8559-c9c2-4400-bf15-364ef64e00a3.png)
+![header](https://user-images.githubusercontent.com/10860624/127743819-3978681d-6f10-43a1-9460-e0cdf5145bab.png)
 
 #### Properties
 
