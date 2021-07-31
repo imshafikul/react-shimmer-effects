@@ -3,7 +3,7 @@ import {
   ShimmerSimpleGallery,
   ShimmerFeaturedGallery,
   ShimmerSeparator,
-} from "shimmer-react";
+} from "react-shimmer-effects";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 

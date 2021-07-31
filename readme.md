@@ -1,19 +1,19 @@
-# shimmer-react
+# react-shimmer-effects
 
 Customizable shimmer effects for React.
 
-### [**Live Demo**](https://shafikulz.github.io/shimmer-react/)
+### [**Live Demo**](https://shafikulz.github.io/react-shimmer-effects/)
 
 ## Install
 
 ```bash
-npm install shimmer-react --save
+npm install react-shimmer-effects --save
 ```
 
 or
 
 ```bash
-yarn add shimmer-react
+yarn add react-shimmer-effects
 ```
 
 ## Elements
@@ -22,7 +22,7 @@ yarn add shimmer-react
 
 ```jsx
 import React from "react";
-import { ShimmerButton } from "shimmer-react";
+import { ShimmerButton } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -45,7 +45,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerBadge } from "shimmer-react";
+import { ShimmerBadge } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -66,7 +66,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerTitle } from "shimmer-react";
+import { ShimmerTitle } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -92,7 +92,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerText } from "shimmer-react";
+import { ShimmerText } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -117,7 +117,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerCircularImage } from "shimmer-react";
+import { ShimmerCircularImage } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -142,7 +142,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerThumbnail } from "shimmer-react";
+import { ShimmerThumbnail } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -170,7 +170,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerSectionHeader } from "shimmer-react";
+import { ShimmerSectionHeader } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -202,7 +202,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerSimpleGallery } from "shimmer-react";
+import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -238,7 +238,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerFeaturedGallery } from "shimmer-react";
+import { ShimmerFeaturedGallery } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -265,7 +265,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerTable } from "shimmer-react";
+import { ShimmerTable } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -289,7 +289,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerContentBlock } from "shimmer-react";
+import { ShimmerContentBlock } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -328,7 +328,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerCategoryItem } from "shimmer-react";
+import { ShimmerCategoryItem } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -412,7 +412,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerCategoryList } from "shimmer-react";
+import { ShimmerCategoryList } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -439,7 +439,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerSocialPost } from "shimmer-react";
+import { ShimmerSocialPost } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -470,7 +470,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerPostItem } from "shimmer-react";
+import { ShimmerPostItem } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -512,7 +512,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerPostList } from "shimmer-react";
+import { ShimmerPostList } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {
@@ -538,7 +538,7 @@ class Example extends Component {
 
 ```jsx
 import React from "react";
-import { ShimmerPostDetails } from "shimmer-react";
+import { ShimmerPostDetails } from "react-shimmer-effects";
 
 class Example extends Component {
   render() {

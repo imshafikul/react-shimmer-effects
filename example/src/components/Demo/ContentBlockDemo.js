@@ -1,5 +1,5 @@
 import React from "react";
-import { ShimmerContentBlock } from "shimmer-react";
+import { ShimmerContentBlock } from "react-shimmer-effects";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 

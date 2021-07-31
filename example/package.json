@@ -1,6 +1,6 @@
 {
-  "name": "shimmer-react-example",
-  "homepage": "https://shafikulz.github.io/shimmer-react",
+  "name": "react-shimmer-effects-example",
+  "homepage": "https://shafikulz.github.io/react-shimmer-effects",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -15,8 +15,8 @@
     "react-scripts": "^1.1.4"
   },
   "scripts": {
-    "start": "npm link shimmer-react && react-scripts start",
-    "build": "npm link shimmer-react && react-scripts build",
+    "start": "npm link react-shimmer-effects && react-scripts start",
+    "build": "npm link react-shimmer-effects && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

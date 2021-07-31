@@ -4,7 +4,7 @@ import {
   ShimmerSeparator,
   ShimmerCategoryItem,
   ShimmerCategoryList,
-} from "shimmer-react";
+} from "react-shimmer-effects";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 

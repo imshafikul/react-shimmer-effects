@@ -1,5 +1,5 @@
 import React from "react";
-import { ShimmerSocialPost, ShimmerSeparator } from "shimmer-react";
+import { ShimmerSocialPost, ShimmerSeparator } from "react-shimmer-effects";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 

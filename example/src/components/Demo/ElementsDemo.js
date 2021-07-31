@@ -7,7 +7,7 @@ import {
   ShimmerText,
   ShimmerTitle,
   ShimmerSeparator,
-} from "shimmer-react";
+} from "react-shimmer-effects";
 import CodePreview from "../CodePreview";
 import { code } from "../../configs";
 

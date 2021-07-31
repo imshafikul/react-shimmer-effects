@@ -8,7 +8,7 @@ const code = {
   ShimmerBadge,
   ShimmerTableCol,
   ShimmerTableRow,
-} from "shimmer-react";
+} from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
@@ -28,42 +28,42 @@ const YourComponent = () => {
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));
 `,
-  CIRCULAR_IMAGE_GALLERY_WITH_CAPTION: `import { ShimmerSimpleGallery } from "shimmer-react";
+  CIRCULAR_IMAGE_GALLERY_WITH_CAPTION: `import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerSimpleGallery imageType="circular" imageHeight={200} caption />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  THUMBNAIL_IMAGE_GALLERY: `import { ShimmerSimpleGallery } from "shimmer-react";
+  THUMBNAIL_IMAGE_GALLERY: `import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerSimpleGallery card imageHeight={300} />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  THUMBNAIL_IMAGE_GALLERY_WITH_CAPTION: `import { ShimmerSimpleGallery } from "shimmer-react";
+  THUMBNAIL_IMAGE_GALLERY_WITH_CAPTION: `import { ShimmerSimpleGallery } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerSimpleGallery card imageHeight={300} caption />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  FEATURED_GALLERY: `import { ShimmerFeaturedGallery } from "shimmer-react";
+  FEATURED_GALLERY: `import { ShimmerFeaturedGallery } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerFeaturedGallery row={3} col={2} card frameHeight={600} />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  TABLE: `import { ShimmerTable } from "shimmer-react";
+  TABLE: `import { ShimmerTable } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerTable row={10} />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  SOCIAL_POST: `import { ShimmerSocialPost } from "shimmer-react";
+  SOCIAL_POST: `import { ShimmerSocialPost } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
@@ -78,7 +78,7 @@ const YourComponent = () => {
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
 
-  POST_ITEMS: `import { ShimmerPostItem } from "shimmer-react";
+  POST_ITEMS: `import { ShimmerPostItem } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
@@ -99,14 +99,14 @@ const YourComponent = () => {
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  POST_LIST: `import { ShimmerPostList } from "shimmer-react";
+  POST_LIST: `import { ShimmerPostList } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerPostList postStyle="STYLE_FOUR" col={3} row={2} gap={30} />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  POST_DETAILS: `import { ShimmerPostDetails } from "shimmer-react";
+  POST_DETAILS: `import { ShimmerPostDetails } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
@@ -118,7 +118,7 @@ const YourComponent = () => {
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  CONTENT_BLOCK: `import { ShimmerContentBlock } from "shimmer-react";
+  CONTENT_BLOCK: `import { ShimmerContentBlock } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
@@ -130,7 +130,7 @@ const YourComponent = () => {
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  CATEGORY_ITEMS: `import { ShimmerCategoryItem } from "shimmer-react";
+  CATEGORY_ITEMS: `import { ShimmerCategoryItem } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
@@ -192,14 +192,14 @@ const YourComponent = () => {
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));
 `,
-  CATEGORY_LISTS: `import { ShimmerCategoryList } from "shimmer-react";
+  CATEGORY_LISTS: `import { ShimmerCategoryList } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return <ShimmerCategoryList title items={6} categoryStyle="STYLE_SEVEN" />;
 };
 
 ReactDOM.render(<YourComponent />, document.getElementById("root"));`,
-  SECTION_HEADER: `import { ShimmerSectionHeader } from "shimmer-react";
+  SECTION_HEADER: `import { ShimmerSectionHeader } from "react-shimmer-effects";
 
 const YourComponent = () => {
   return (
