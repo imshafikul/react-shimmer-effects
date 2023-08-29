@@ -2,7 +2,7 @@
 
 Customizable shimmer effects for React.
 
-### [**Live Demo**](https://shafikulz.github.io/react-shimmer-effects/)
+### [**Live Demo**](https://imshafikul.github.io/react-shimmer-effects/)
 
 ## Install
 
