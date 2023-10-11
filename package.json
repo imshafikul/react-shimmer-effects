@@ -1,6 +1,6 @@
 {
   "name": "react-shimmer-effects",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shimmer effects for React",
   "author": "Shafikul Islam",
   "license": "MIT",
@@ -40,9 +40,9 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*"
   },
   "dependencies": {
     "classnames": "^2.3.1"
